@@ -7,16 +7,28 @@ const Nav = () => {
     <div className='nav-wrapper'>
       <div className='sections'>
         <NavLink exact to='/'>
-          Home
+          Home{' '}
+          <span role='img' aria-label='house'>
+            🏚
+          </span>
         </NavLink>
         <NavLink exact to='/cv'>
-          CV
+          CV{' '}
+          <span role='img' aria-label='paper'>
+            📄
+          </span>
         </NavLink>
         <NavLink exact to='/portfolio'>
-          Portfolio
+          Portfolio{' '}
+          <span role='img' aria-label='computer'>
+            🖥
+          </span>
         </NavLink>
         <NavLink exact to='/contact'>
-          Contact
+          Contact{' '}
+          <span role='img' aria-label='mail'>
+            📨{' '}
+          </span>
         </NavLink>
       </div>
     </div>
