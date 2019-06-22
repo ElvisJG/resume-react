@@ -1,0 +1,42 @@
+.home-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text-wrapper {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 10rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text h1:nth-child(1) {
+  margin-bottom: -1rem;
+  font-size: 12rem;
+}
+
+.hero-text h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 2rem;
+}
+
+.splash-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}

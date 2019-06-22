@@ -1,0 +1,97 @@
+{
+  "main": {
+    "name": "Elvis Gonzalez",
+    "occupation": "Web Developer",
+    "description": "Techie and Foodie by heart, located in historic Charleston, SC. I am passionate about improving, learning, and teaching code!",
+    "image": "https://avatars1.githubusercontent.com/u/44843903?s=400&u=a5283f0ced5bbdecf1b13d8f4ee2cae96a533fd3&v=4",
+    "bio": "I love learning new things, teaching others, and sealife! 🐢 I am most comfortable in a JavaScript environment but did my college studies using Java/Visual Basic. I am currently working with Atlas Technologies, Inc as a Software Tester. Working for Atlas has given me a flexible opportunity that has allowed me to learn a variety of things in a fairly short amount of time. I am also enrolled into Lambda School, a full stack immersive, in order to fill gaps in my knowledge and stay on top of new and developing technologies!",
+    "contactmessage": "Thanks for checking out my resume!",
+    "email": "ElvisJGonzalez@gmail.com",
+    "address": {
+      "city": "Charleston",
+      "state": "South Carolina"
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/elvisjg/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/ElvisJG",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "Lambda School",
+        "degree": "Full Stack Web Development",
+        "graduated": "Currently Enrolled",
+        "description": "Full Stack Course offers practical training by creating fully developed, Responsive, and Tested websites/applications"
+      },
+      {
+        "school": "Fayetteville Tech",
+        "degree": "Computer Science",
+        "graduated": "March 2015",
+        "description": "Focus was on Computer Programming and OOP using Java, Visual Basic, and Android Studio"
+      }
+    ],
+    "work": [
+      {
+        "company": "Atlas Technologies, Inc",
+        "title": "Software Tester",
+        "years": "July 2018 - Present",
+        "description": "Creating and Updating Test Cases/Requirements, Expanding and Maintaining the functions of various web applications, Implemented SSO throughout Applications using LDAP, and Managing Internal Wiki page/Documentation"
+      },
+      {
+        "company": "Walt Disney World Resort",
+        "title": "Cook II",
+        "years": "June 2013 - February 2014",
+        "description": "Created Experiences for Guests, Learned how To be part of a team, Tested critical thinking and throughput. I am including this because it's an experience like no other, and i'm glad to have had the opportunity."
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "confidence": "80%"
+      },
+      {
+        "name": "ReactJS",
+        "confidence": "70%"
+      },
+      {
+        "name": "Python",
+        "confidence": "60%"
+      },
+      {
+        "name": "CSS",
+        "confidence": "90%"
+      },
+      {
+        "name": "HTML5",
+        "confidence": "80%"
+      },
+      {
+        "name": "MySQL",
+        "confidence": "50%"
+      },
+      {
+        "name": "GIT",
+        "confidence": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Wanderlust",
+        "category": "Wanderlust's Marketing Page, developed using HTML, CSS, SCSS, and JS",
+        "image": "wanderlust.jpg",
+        "url": "https://marketing-wanderlust.netlify.com/"
+      }
+    ]
+  }
+}
