@@ -1,8 +1,92 @@
+.cv-wrapper {
+  color: #09091a;
+  margin: 0rem 5rem;
+}
+
+em {
+  color: #1793d1;
+}
+
 .cv-title {
   text-align: center;
+  margin: 1rem 0;
 }
 
 .cv-title h1 {
   font-size: 4rem;
+  font-weight: bolder;
+  color: #1793d1;
+}
+
+.cv-title h2 {
+  font-size: 2.5rem;
   font-weight: bold;
+  color: #09091a;
+}
+
+.aside {
+  width: 20%;
+  height: 100%;
+  border: 1px solid red;
+  float: left;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  margin-right: 5rem;
+}
+
+.aside-section {
+  margin: 0rem 0.5rem 1rem;
+  text-align: end;
+  border-bottom: 1px solid #09091a;
+}
+
+.aside-section h2 {
+  font-size: 2.5rem;
+  color: #1793d1;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.aside-section p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cv-section {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.cv-section em {
+  font-weight: bold;
+}
+
+.cv-section h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cv-section p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.cv-experience {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.cv-experience p {
+  margin: 0rem 2rem 2rem;
+  text-align: center;
+}
+
+.cv-edu {
+  display: flex;
+}
+
+.cv-edu-mid {
+  flex-direction: column;
 }

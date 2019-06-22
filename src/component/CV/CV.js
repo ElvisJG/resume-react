@@ -11,7 +11,7 @@ export default () => {
     <div className='cv-wrapper'>
       <div className='cv-title'>
         <h1>Elvis Gonzalez</h1>
-        <h3>Full Stack Web Developer</h3>
+        <h2>Full Stack Web Developer</h2>
       </div>
       <Aside />
       <Int />
