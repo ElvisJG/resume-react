@@ -1,11 +1,11 @@
 .nav-wrapper {
   height: 100px;
   width: 100%;
-  border-bottom: 2px solid #c0c0c8;
   display: flex;
   text-align: center;
   align-items: center;
-  background: #09091a;
+  background: rgb(9, 9, 26);
+  border-bottom: 2px solid #2b638f;
 }
 
 .sections {
@@ -22,9 +22,6 @@
   font-weight: bold;
   width: 100%;
   line-height: 100px;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 6px 0px #2b638f;
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
