@@ -42,8 +42,8 @@ button {
   border-radius: 8px;
   padding: 1rem;
   font-size: 2rem;
-  color: #09091a;
-  background: #2b638f;
+  color: white;
+  background: #1793d1;
   border: 1px solid white;
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
