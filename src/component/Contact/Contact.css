@@ -3,6 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: rgba(9, 9, 26, 0.7);
+  padding: 5rem;
 }
 .contact-form {
   text-align: center;
@@ -10,4 +12,32 @@
   flex-flow: column nowrap;
   align-items: center;
   width: 100%;
+}
+
+.contact-wrapper button {
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+label {
+  font-size: 2rem;
+  color: #1793d1;
+}
+
+textarea {
+  margin: 1rem;
+  padding: 1rem;
+  width: 450px;
+  height: 150px;
+  color: #09091a;
+  border: 2px solid rgba(9, 9, 26, 0.8);
+}
+
+input {
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  border: 2px solid rgba(9, 9, 26, 0.8);
 }
