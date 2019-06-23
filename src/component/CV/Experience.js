@@ -17,7 +17,9 @@ export default () => {
           throughout Applications using LDAP, and Managing Internal Wiki
           page/Documentation
         </p>
-        <p>July 2018 - Present</p>
+        <div className='duration'>
+          <p>July 2018 - Present</p>
+        </div>
       </div>
       <div className='cv-experience'>
         <em>
@@ -30,7 +32,9 @@ export default () => {
           Relations using Workforce | Reached out to other businesses and set up
           professional relationships
         </p>
-        <p>December 2008 - May 2017</p>
+        <div className='duration'>
+          <p>December 2008 - May 2017</p>
+        </div>
       </div>
       <div className='cv-experience'>
         <em>
@@ -43,7 +47,9 @@ export default () => {
           it's an experience like no other, and i'm glad to have had the
           opportunity.
         </p>
-        <p>June 2013 - February 2014</p>
+        <div className='duration'>
+          <p>June 2013 - February 2014</p>
+        </div>
       </div>
     </div>
   );

@@ -7,6 +7,11 @@ em {
   color: #1793d1;
 }
 
+.main-section {
+  width: 79%;
+  float: right;
+}
+
 .cv-title {
   text-align: center;
   margin: 1rem 0;
@@ -22,17 +27,18 @@ em {
   font-size: 2.5rem;
   font-weight: bold;
   color: #09091a;
+  border-bottom: 1px ridge #09091a;
+  border-bottom-width: 0.25rem;
 }
 
 .aside {
   width: 20%;
   height: 100%;
-  border: 1px solid red;
+
   float: left;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
-  margin-right: 5rem;
 }
 
 .aside-section {
@@ -55,7 +61,7 @@ em {
 
 .cv-section {
   font-size: 3rem;
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .cv-section em {
@@ -65,28 +71,56 @@ em {
 .cv-section h3 {
   font-weight: bold;
   margin-bottom: 1rem;
+  border-bottom: 1px ridge #09091a;
 }
 
 .cv-section p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.5rem;
 }
 
 .cv-experience {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cv-experience p {
-  margin: 0rem 2rem 2rem;
   text-align: center;
+  margin: 0rem 1rem 1rem;
+  border: 1px solid red;
 }
 
 .cv-edu {
   display: flex;
+  text-align: center;
+  margin-bottom: 1rem;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.cv-edu h5 {
+  font-size: 1.5rem;
+  text-align: left;
+  border: 2px solid blue;
+  width: 150px;
+  margin-right: 1rem;
+}
+
+.cv-edu p {
+  margin: auto;
+  margin: 0rem 1rem 1rem;
+  border: 1px solid red;
+  text-align: left;
 }
 
 .cv-edu-mid {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.school p {
+  float: right;
 }

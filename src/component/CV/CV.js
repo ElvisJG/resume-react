@@ -14,9 +14,11 @@ export default () => {
         <h2>Full Stack Web Developer</h2>
       </div>
       <Aside />
-      <Int />
-      <Edu />
-      <Exp />
+      <div className='main-section'>
+        <Int />
+        <Edu />
+        <Exp />
+      </div>
     </div>
   );
 };
