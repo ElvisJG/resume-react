@@ -3,35 +3,37 @@ import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithubSquare } from 'react-icons/fa';
 
-export default () => {
+export default props => {
+  // const { email, spoken, notions, address } = props.main;
+  // const { url, className } = props.social;
   return (
     <div className='aside'>
       <div className='aside-section'>
         <h2>About</h2>
-        <p>Charleston</p>
-        <p>South Carolina</p>
+        <p>address.city</p>
+        <p>address.state</p>
         <br />
-        <p>ElvisJGonzalez@gmail.com</p>
+        <p>email</p>
         <div className='icons'>
-          <a href='https://www.linkedin.com/in/elvisjg/'>
+          <a href='url'>
             <FaLinkedin size='3rem' />
           </a>
-          <a href='https://github.com/elvisjg'>
+          <a href='url'>
             <FaGithubSquare size='3rem' />
           </a>
         </div>
       </div>
       <div className='aside-section'>
         <h2>Languages</h2>
-        <p>Bilingual English/Spanish</p>
-        <p>French & Italian Notions</p>
+        <p>spoken</p>
+        <p>notions</p>
       </div>
       <div className='aside-section'>
-        <h2>Programming</h2>
+        {/* <h2>Programming</h2>
         <p>JavaScript</p>
         <p>(ES6, Node.js)</p>
         <p>Python, Java, Visual Basic</p>
-        <p>CSS3 & HTML5</p>
+        <p>CSS3 & HTML5</p> */}
       </div>
     </div>
   );

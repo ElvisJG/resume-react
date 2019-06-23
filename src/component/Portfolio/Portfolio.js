@@ -13,13 +13,10 @@ export default () => {
         />
         <div className='portfolio-hero'>
           <div className='portfolio-hero-text'>
-            <h1>Wanderlust</h1>
-            <h3>
-              Wanderlust's Marketing Page, developed using HTML, CSS, SCSS, and
-              JS
-            </h3>
-            <a href='https://marketing-wanderlust.netlify.com/'>
-              <button>Visit Wanderlust</button>
+            <h1>title</h1>
+            <h3>category</h3>
+            <a href='url'>
+              <button>Visit title</button>
             </a>
           </div>
         </div>

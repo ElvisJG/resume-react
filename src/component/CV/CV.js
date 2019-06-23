@@ -6,12 +6,12 @@ import Int from './Interests';
 import Edu from './Education';
 import Exp from './Experience';
 
-export default () => {
+export default props => {
   return (
     <div className='cv-wrapper'>
       <div className='cv-title'>
-        <h1>Elvis Gonzalez</h1>
-        <h2>Full Stack Web Developer</h2>
+        <h1>{props.main.name}</h1>
+        <h2>{props.main.cv_description}</h2>
       </div>
       <Aside />
       <div className='main-section'>

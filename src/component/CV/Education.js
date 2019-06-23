@@ -8,22 +8,19 @@ export default () => {
       </h3>
 
       <div className='cv-edu'>
-        <h5>Currently Enrolled</h5>
+        <h5>graduated</h5>
         <div className='cv-edu-mid'>
           <em>
-            <p>Certificate, Full Stack Web Development</p>
+            <p>degree</p>
           </em>
-          <p>
-            Full Stack Course offers practical training by creating fully
-            developed, Responsive, and Tested websites/applications
-          </p>
+          <p>description</p>
         </div>
         <div className='school'>
-          <p>Lambda School</p>
+          <p>school</p>
         </div>
       </div>
 
-      <div className='cv-edu'>
+      {/* <div className='cv-edu'>
         <h5>March 2015</h5>
         <div className='cv-edu-mid'>
           <em>
@@ -37,9 +34,9 @@ export default () => {
         <div className='school'>
           <p>Fayetteville Tech</p>
         </div>
-      </div>
+      </div> */}
 
-      <div className='cv-edu'>
+      {/* <div className='cv-edu'>
         <h5>March 2013</h5>
         <div className='cv-edu-mid'>
           <em>
@@ -53,7 +50,7 @@ export default () => {
         <div className='school'>
           <p>Le Cordon Bleu</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

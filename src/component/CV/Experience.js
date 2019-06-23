@@ -6,22 +6,19 @@ export default () => {
       <h3>
         <em>Exp</em>erience
       </h3>
+
       <div className='cv-experience'>
         <em>
-          <p>Atlas Technologies, Inc</p>
+          <p>company</p>
         </em>
-        <p>Software Tester</p>
-        <p>
-          Creating and Updating Test Cases/Requirements, Expanding and
-          Maintaining the functions of various web applications, Implemented SSO
-          throughout Applications using LDAP, and Managing Internal Wiki
-          page/Documentation
-        </p>
+        <p>title</p>
+        <p>description</p>
         <div className='duration'>
-          <p>July 2018 - Present</p>
+          <p>duration</p>
         </div>
       </div>
-      <div className='cv-experience'>
+
+      {/* <div className='cv-experience'>
         <em>
           <p>Gonzalez Woodwork</p>
         </em>
@@ -35,8 +32,9 @@ export default () => {
         <div className='duration'>
           <p>December 2008 - May 2017</p>
         </div>
-      </div>
-      <div className='cv-experience'>
+      </div> */}
+
+      {/* <div className='cv-experience'>
         <em>
           <p>Walt Disney World Resort</p>
         </em>
@@ -50,7 +48,7 @@ export default () => {
         <div className='duration'>
           <p>June 2013 - February 2014</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

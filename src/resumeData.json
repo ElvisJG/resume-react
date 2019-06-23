@@ -2,11 +2,14 @@
   "main": {
     "name": "Elvis Gonzalez",
     "occupation": "Web Developer",
+    "cv_description": "Full Stack Web Developer",
     "description": "Techie and Foodie by heart, located in historic Charleston, SC. I am passionate about improving, learning, and teaching code!",
     "image": "https://avatars1.githubusercontent.com/u/44843903?s=400&u=a5283f0ced5bbdecf1b13d8f4ee2cae96a533fd3&v=4",
     "bio": "I love learning new things, teaching others, and sealife! 🐢 I am most comfortable in a JavaScript environment but did my college studies using Java/Visual Basic. I am currently working with Atlas Technologies, Inc as a Software Tester. Working for Atlas has given me a flexible opportunity that has allowed me to learn a variety of things in a fairly short amount of time. I am also enrolled into Lambda School, a full stack immersive, in order to fill gaps in my knowledge and stay on top of new and developing technologies!",
     "prointerests": "JavaScript, React, Node.JS, Express.JS, MongoDB, GIT, Open Source, Python, Scripting, HTML, CSS, SASS/LESS",
     "contactmessage": "Thanks for checking out my resume!",
+    "spoken": "Bilingual English/Spanish",
+    "notions": "French & Italian Notions",
     "email": "ElvisJGonzalez@gmail.com",
     "address": {
       "city": "Charleston",
@@ -16,12 +19,12 @@
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/elvisjg/",
-        "className": "fa fa-linkedin"
+        "className": "FaLinkedin"
       },
       {
         "name": "github",
         "url": "https://github.com/ElvisJG",
-        "className": "fa fa-github"
+        "className": "FaGithubSquare"
       }
     ]
   },
@@ -50,33 +53,33 @@
       {
         "company": "Atlas Technologies, Inc",
         "title": "Software Tester",
-        "years": "July 2018 - Present",
+        "duration": "July 2018 - Present",
         "description": "Creating and Updating Test Cases/Requirements, Expanding and Maintaining the functions of various web applications, Implemented SSO throughout Applications using LDAP, and Managing Internal Wiki page/Documentation"
       },
       {
         "company": "Gonzalez Woodwork",
         "title": "Office Manager",
-        "years": "December 2008 - May 2017",
+        "duration": "December 2008 - May 2017",
         "description": "Deployed and maintained a MySQL Database for a small business that tracked invoices, resources, and products | Maintained Customer Relations using Workforce | Reached out to other businesses and set up professional relationships"
       },
       {
         "company": "Walt Disney World Resort",
         "title": "Cook II",
-        "years": "June 2013 - February 2014",
+        "duration": "June 2013 - February 2014",
         "description": "Created Experiences for Guests, Learned how To be part of a team, Tested critical thinking and throughput. I am including this because it's an experience like no other, and i'm glad to have had the opportunity."
       }
     ],
     "skills": [
       {
         "name": "JavaScript",
-        "confidence": "80%"
-      },
-      {
-        "name": "ReactJS",
         "confidence": "70%"
       },
       {
-        "name": "Python",
+        "name": "React",
+        "confidence": "70%"
+      },
+      {
+        "name": "Node.js",
         "confidence": "60%"
       },
       {
@@ -88,8 +91,8 @@
         "confidence": "80%"
       },
       {
-        "name": "MySQL",
-        "confidence": "50%"
+        "name": "MongoDB",
+        "confidence": "60%"
       },
       {
         "name": "GIT",
