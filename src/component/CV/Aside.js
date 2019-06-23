@@ -30,12 +30,7 @@ export default props => {
         <p>{notions}</p>
       </div>
       <div className='aside-section'>
-        <Skills skills={props.skills} />
-        {/* <h2>Programming</h2>
-        <p>JavaScript</p>
-        <p>(ES6, Node.js)</p>
-        <p>Python, Java, Visual Basic</p>
-        <p>CSS3 & HTML5</p> */}
+        <Skills resume={props.resume} />
       </div>
     </div>
   );

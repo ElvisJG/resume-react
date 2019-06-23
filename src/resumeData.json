@@ -72,7 +72,7 @@
     "skills": [
       {
         "name": "JavaScript",
-        "confidence": "70%"
+        "confidence": "60%"
       },
       {
         "name": "React",
@@ -80,11 +80,11 @@
       },
       {
         "name": "Node.js",
-        "confidence": "60%"
+        "confidence": "50%"
       },
       {
         "name": "CSS",
-        "confidence": "90%"
+        "confidence": "80%"
       },
       {
         "name": "HTML5",
@@ -92,7 +92,7 @@
       },
       {
         "name": "MongoDB",
-        "confidence": "60%"
+        "confidence": "40%"
       },
       {
         "name": "GIT",

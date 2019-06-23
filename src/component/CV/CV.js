@@ -13,7 +13,7 @@ export default props => {
         <h1>{props.main.name}</h1>
         <h2>{props.main.cv_description}</h2>
       </div>
-      <Aside main={props.main} skills={props.skills} />
+      <Aside main={props.main} resume={props.resume} />
       <div className='main-section'>
         <Int main={props.main} />
         <Edu resume={props.resume} />

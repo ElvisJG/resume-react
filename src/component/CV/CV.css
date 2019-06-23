@@ -41,7 +41,6 @@ em {
   font-size: 2.5rem;
   font-weight: bold;
   color: #09091a;
-  /* border-bottom: 1px ridge #09091a; */
   border-bottom-width: 0.25rem;
 }
 
@@ -59,6 +58,10 @@ em {
   margin: 0rem 0.5rem 1rem;
   text-align: end;
   border-bottom: 1px solid #09091a;
+}
+
+.aside-section:nth-child(3) {
+  border-bottom: none;
 }
 
 .aside-section h2 {
@@ -85,7 +88,6 @@ em {
 .cv-section h3 {
   font-weight: bold;
   margin-bottom: 1rem;
-  /* border-bottom: 1px ridge #09091a; */
 }
 
 .cv-section p {
@@ -152,8 +154,6 @@ em {
 .bars .skills {
   margin-top: 36px;
   list-style: none;
-  font-size: 2rem;
-  color: #09091a;
 }
 
 .bars li {
@@ -165,13 +165,13 @@ em {
 }
 
 .bars li em {
-  font: 15px 'opensans-bold', sans-serif;
-  color: #1793d1;
+  font: 1rem 'opensans-bold', sans-serif;
+  color: #0577b2;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: normal;
   position: relative;
-  top: -36px;
+  top: -20px;
 }
 
 .bar-expand {
@@ -181,7 +181,7 @@ em {
 
   margin: 0;
   padding-right: 24px;
-  background: #09091a;
+  background: #0577b2;
   display: inline-block;
   height: 42px;
   line-height: 42px;
