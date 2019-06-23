@@ -101,12 +101,14 @@
     ]
   },
   "portfolio": {
-    "projects": [
+    "project": [
       {
         "title": "Wanderlust",
         "category": "Wanderlust's Marketing Page, developed using HTML, CSS, SCSS, and JS",
         "image": "wanderlust.jpg",
-        "url": "https://marketing-wanderlust.netlify.com/"
+        "url": "https://marketing-wanderlust.netlify.com/",
+        "source": "{wanderlust}",
+        "alt": "Wanderlust Screenshot"
       }
     ]
   }

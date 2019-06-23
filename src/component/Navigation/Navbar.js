@@ -29,12 +29,12 @@ const Nav = () => {
             <FaBook />
           </span>
         </NavLink>
-        <NavLink exact to='/contact'>
+        {/* <NavLink exact to='/contact'>
           Contact{' '}
           <span role='img' aria-label='mail'>
             <FaAddressBook />
           </span>
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );

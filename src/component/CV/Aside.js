@@ -16,10 +16,10 @@ export default props => {
         <br />
         <p>{email}</p>
         <div className='icons'>
-          <a href='url'>
+          <a href='https://www.linkedin.com/in/elvisjg/'>
             <FaLinkedin size='3rem' />
           </a>
-          <a href='url'>
+          <a href='https://github.com/ElvisJG'>
             <FaGithubSquare size='3rem' />
           </a>
         </div>
