@@ -7,15 +7,15 @@ export default props => {
   // const { email, spoken, notions, address } = props.main;
   // const { url, className } = props.social;
 
-  var skills = this.props.data.skills.map(function(skills) {
-    var className = 'bar-expand ' + skills.name.toLowerCase();
-    return (
-      <li key={skills.name}>
-        <span style={{ width: skills.confidence }} className={className} />
-        <em>{skills.name}</em>
-      </li>
-    );
-  });
+  // var skills = this.props.data.skills.map(function(skills) {
+  //   var className = 'bar-expand ' + skills.name.toLowerCase();
+  //   return (
+  //     <li key={skills.name}>
+  //       <span style={{ width: skills.confidence }} className={className} />
+  //       <em>{skills.name}</em>
+  //     </li>
+  //   );
+  // });
 
   return (
     <div className='aside'>
@@ -49,7 +49,7 @@ export default props => {
 
           <div className='nine columns main-col'>
             <div className='bars'>
-              <ul className='skills'>{skills}</ul>
+              <ul className='skills'>skills</ul>
             </div>
           </div>
         </div>

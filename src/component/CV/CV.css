@@ -166,7 +166,7 @@ em {
 
 .bars li em {
   font: 15px 'opensans-bold', sans-serif;
-  color: #313131;
+  color: #1793d1;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: normal;
@@ -181,7 +181,7 @@ em {
 
   margin: 0;
   padding-right: 24px;
-  background: #313131;
+  background: #09091a;
   display: inline-block;
   height: 42px;
   line-height: 42px;
