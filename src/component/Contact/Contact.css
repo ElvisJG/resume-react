@@ -1,0 +1,13 @@
+.contact-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-form {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
