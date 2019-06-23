@@ -17,7 +17,7 @@ export default props => {
       <div className='main-section'>
         <Int main={props.main} />
         <Edu resume={props.resume} />
-        <Exp />
+        <Exp resume={props.resume} />
       </div>
     </div>
   );
