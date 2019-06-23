@@ -7,6 +7,20 @@ em {
   color: #1793d1;
 }
 
+.icons {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.icons a:nth-child(1) {
+  margin-right: 1rem;
+  color: #0577b2;
+}
+
+.icons a:nth-child(2) {
+  color: #24292e;
+}
+
 .main-section {
   width: 79%;
   float: right;

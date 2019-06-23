@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithubSquare } from 'react-icons/fa';
+
 export default () => {
   return (
     <div className='aside'>
@@ -9,8 +12,14 @@ export default () => {
         <p>South Carolina</p>
         <br />
         <p>ElvisJGonzalez@gmail.com</p>
-        <p>LinkedIn</p>
-        <p>Github</p>
+        <div className='icons'>
+          <a href='https://www.linkedin.com/in/elvisjg/'>
+            <FaLinkedin size='3rem' />
+          </a>
+          <a href='https://github.com/elvisjg'>
+            <FaGithubSquare size='3rem' />
+          </a>
+        </div>
       </div>
       <div className='aside-section'>
         <h2>Languages</h2>
