@@ -1,0 +1,50 @@
+.portfolio-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.profile-card {
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.portfolio-img {
+  max-height: 500px;
+  max-width: 1920px;
+  position: relative;
+  object-fit: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.portfolio-hero-text {
+  font-size: 6rem;
+  color: white;
+  text-shadow: 2px 2px 5px #09091a;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}
+
+.portfolio-hero-text h3 {
+  font-size: 2.25rem;
+}
+
+button {
+  margin-top: 2rem;
+  line-height: 3rem;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #09091a;
+  background: #2b638f;
+  border: 1px solid white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
