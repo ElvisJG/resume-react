@@ -8,7 +8,7 @@ export default props => {
       </h3>
 
       {props.resume.work.map(exp => (
-        <div className='cv-experience'>
+        <div className='cv-experience' key={exp.company}>
           <em>
             <p>{exp.company}</p>
           </em>

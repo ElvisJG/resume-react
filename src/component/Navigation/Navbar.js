@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa';
 import { FaGraduationCap } from 'react-icons/fa';
 import { FaBook } from 'react-icons/fa';
-import { FaAddressBook } from 'react-icons/fa';
+// import { FaAddressBook } from 'react-icons/fa';
 
 const Nav = () => {
   return (

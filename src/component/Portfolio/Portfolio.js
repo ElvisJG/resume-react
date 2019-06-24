@@ -6,7 +6,7 @@ export default props => {
   return (
     <div className='portfolio-wrapper'>
       {props.portfolio.project.map(p => (
-        <div className='profile-card'>
+        <div className='profile-card' key={p.title}>
           <div className='mapwrapper'>
             <img className='portfolio-img' src={wanderlust} alt={p.alt} />
             <div className='portfolio-hero'>

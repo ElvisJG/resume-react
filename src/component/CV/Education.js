@@ -8,7 +8,7 @@ export default props => {
       </h3>
 
       {props.resume.education.map(edu => (
-        <div className='cv-edu'>
+        <div className='cv-edu' key={edu.school}>
           <h5>{edu.graduated}</h5>
           <div className='cv-edu-mid'>
             <em>

@@ -6,7 +6,7 @@ export default props => {
   const { name, occupation, address, description } = props.main;
   return (
     <div className='home-wrapper'>
-      <img className='splash-img' src={home} alt='Underwater Image' />
+      <img className='splash-img' src={home} alt={description} />
       <div className='hero-text-wrapper'>
         <div className='hero-text'>
           <h1>Hi,</h1>

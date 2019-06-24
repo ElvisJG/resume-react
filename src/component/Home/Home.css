@@ -45,3 +45,33 @@
   position: relative;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 600px) {
+  .hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-text h1:nth-child(1) {
+    font-size: 4rem;
+  }
+
+  .hero-text h3 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .splash-img {
+    height: 100vh;
+    width: 100%;
+    background-size: auto;
+  }
+}
