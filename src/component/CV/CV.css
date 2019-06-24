@@ -70,8 +70,10 @@ em {
 }
 
 .icons {
-  width: 100%;
-  margin: 1rem 0;
+  display: flex;
+  width: 7rem;
+  float: right;
+  margin: 0 0 1rem;
 }
 
 .icons a:nth-child(1) {
@@ -214,20 +216,27 @@ em {
 /*---------------------------------------*/
 
 @media only screen and (max-width: 600px) {
+  .cv-title h2 {
+    font-size: 2rem;
+  }
+
+  .cv-section p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .cv-school p {
+    color: #0577b2;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 750px) {
   .cv-wrapper {
     display: flex;
     flex-direction: column;
     margin: 0 2rem;
     text-align: center;
-  }
-
-  .main-section {
-    width: 100%;
-    float: right;
-  }
-
-  .cv-title h2 {
-    font-size: 2rem;
   }
 
   .aside {
@@ -241,25 +250,36 @@ em {
   .aside-section {
     margin-top: 2rem;
     text-align: center;
+    width: 100%;
+  }
+
+  .icons {
+    float: none;
+    margin: 0 auto 1rem;
+  }
+
+  .bars {
+    width: 100%;
+  }
+
+  .bars li {
+    width: 100%;
   }
 
   .aside-section:nth-child(3) {
     border-bottom: 1px solid #09091a;
   }
 
+  .main-section {
+    width: 100%;
+    float: right;
+  }
+
   .cv-section {
     margin-top: 2rem;
     width: 100%;
-  }
-
-  .cv-section {
     font-size: 3rem;
     margin: 2rem 0;
-  }
-
-  .cv-section p {
-    font-size: 1.5rem;
-    margin: 1rem 0;
   }
 
   .cv-edu {
@@ -269,20 +289,19 @@ em {
     margin-bottom: 2rem;
   }
 
-  .cv-edu p {
-    text-align: center;
-  }
   .cv-edu h5 {
     width: 100%;
     text-align: center;
     font-weight: bold;
   }
 
+  .cv-edu p {
+    text-align: center;
+  }
+
   .cv-school p {
     text-align: center;
     font-weight: bold;
-    color: #0577b2;
-    text-decoration: underline;
     margin: 1rem 0rem -1rem;
   }
 
