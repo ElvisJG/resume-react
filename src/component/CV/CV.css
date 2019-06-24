@@ -1,3 +1,7 @@
+/*---------------------------------------*/
+/*             General                   */
+/*---------------------------------------*/
+
 .cv-wrapper {
   color: #09091a;
   margin: 0rem 5rem;
@@ -5,20 +9,6 @@
 
 em {
   color: #1793d1;
-}
-
-.icons {
-  width: 100%;
-  margin: 1rem 0;
-}
-
-.icons a:nth-child(1) {
-  margin-right: 1rem;
-  color: #0577b2;
-}
-
-.icons a:nth-child(2) {
-  color: #24292e;
 }
 
 .main-section {
@@ -43,6 +33,10 @@ em {
   color: #09091a;
   border-bottom-width: 0.25rem;
 }
+
+/*---------------------------------------*/
+/*             Aside                     */
+/*---------------------------------------*/
 
 .aside {
   width: 20%;
@@ -76,73 +70,22 @@ em {
   margin-bottom: 1rem;
 }
 
-.cv-section {
-  font-size: 3rem;
-  margin: 0 1rem;
+.icons {
+  width: 100%;
+  margin: 1rem 0;
 }
 
-.cv-section em {
-  font-weight: bold;
-}
-
-.cv-section h3 {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.cv-section p {
-  font-size: 1.4rem;
-  line-height: 2.5rem;
-}
-
-.cv-experience {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.cv-experience p {
-  text-align: center;
-  margin: 0rem 1rem 1rem;
-  border: 1px solid red;
-}
-
-.cv-edu {
-  display: flex;
-  text-align: center;
-  margin-bottom: 1rem;
-  align-items: center;
-  border: 1px solid red;
-}
-
-.cv-edu h5 {
-  font-size: 1.5rem;
-  text-align: left;
-  border: 2px solid blue;
-  width: 150px;
+.icons a:nth-child(1) {
   margin-right: 1rem;
+  color: #0577b2;
 }
 
-.cv-edu p {
-  margin: auto;
-  margin: 0rem 1rem 1rem;
-  border: 1px solid red;
-  text-align: left;
-}
-
-.cv-edu-mid {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.school p {
-  float: right;
+.icons a:nth-child(2) {
+  color: #24292e;
 }
 
 /*---------------------------------------*/
-/*             Bars                      */
+/*             Aside Bars                */
 /*---------------------------------------*/
 
 .bars {
@@ -186,4 +129,83 @@ em {
   height: 42px;
   line-height: 42px;
   border-radius: 3px 0 0 3px;
+}
+
+/*---------------------------------------*/
+/*          Content Section              */
+/*---------------------------------------*/
+
+.cv-section {
+  font-size: 3rem;
+  margin: 0 1rem;
+}
+
+.cv-section em {
+  font-weight: bold;
+}
+
+.cv-section h3 {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.cv-section:nth-child(1) h3 {
+  margin-top: 0;
+}
+
+.cv-section p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+/*---------------------------------------*/
+/*              Education                */
+/*---------------------------------------*/
+
+.cv-edu {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cv-edu p {
+  margin: 0.5rem 0 0;
+}
+
+.cv-edu h5 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-right: 1rem;
+  width: 150px;
+}
+
+.cv-edu-mid {
+  text-align: center;
+  width: 100%;
+}
+
+.cv-edu-mid p:nth-child(1) {
+  margin-bottom: -1rem;
+}
+
+.cv-school p {
+  text-align: right;
+  margin: 0;
+}
+
+/*---------------------------------------*/
+/*             Experience                */
+/*---------------------------------------*/
+
+.cv-experience {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-experience p {
+  text-align: left;
+  margin-bottom: 0.5rem;
 }

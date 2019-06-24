@@ -1,23 +1,15 @@
-.portfolio-wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
 .profile-card {
   margin-top: 1.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
+
 .portfolio-img {
-  max-height: 500px;
-  max-width: 1920px;
-  position: relative;
-  object-fit: cover;
-  background-position: center;
-  position: relative;
-  background-repeat: no-repeat;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  height: 100%;
+  width: 90%;
+  justify-self: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .portfolio-hero-text {
@@ -25,10 +17,6 @@
   color: white;
   text-shadow: 2px 2px 5px #09091a;
   text-align: center;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 1rem;
 }
 

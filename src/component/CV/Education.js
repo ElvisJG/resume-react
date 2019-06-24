@@ -16,7 +16,7 @@ export default props => {
             </em>
             <p>{edu.description}</p>
           </div>
-          <div className='school'>
+          <div className='cv-school'>
             <p>{edu.school}</p>
           </div>
         </div>
