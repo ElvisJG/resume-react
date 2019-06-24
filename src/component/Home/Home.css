@@ -50,6 +50,7 @@
   .hero-text-wrapper {
     display: flex;
     flex-direction: column;
+    text-shadow: 3px 3px 5px black;
   }
 
   .hero-text h1 {
