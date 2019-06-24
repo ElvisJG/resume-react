@@ -36,3 +36,9 @@
   background: #1793d1;
   color: #09091a;
 }
+
+@media only screen and (max-width: 600px) {
+  .sections a {
+    line-height: 100px;
+  }
+}

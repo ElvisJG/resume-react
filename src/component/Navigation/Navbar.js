@@ -12,20 +12,20 @@ const Nav = () => {
     <div className='nav-wrapper'>
       <div className='sections'>
         <NavLink exact to='/'>
-          Home{' '}
+          Home
           <span role='img' aria-label='house'>
             <FaHome />
           </span>
         </NavLink>
         <NavLink exact to='/cv'>
-          CV{' '}
-          <span role='img' aria-label='paper'>
+          CV
+          <span role='img' aria-label='gradcap'>
             <FaGraduationCap />
           </span>
         </NavLink>
         <NavLink exact to='/portfolio'>
-          Portfolio{' '}
-          <span role='img' aria-label='computer'>
+          Portfolio
+          <span role='img' aria-label='book'>
             <FaBook />
           </span>
         </NavLink>
