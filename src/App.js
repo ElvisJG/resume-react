@@ -20,7 +20,7 @@ export default class App extends PureComponent {
   render() {
     const { portfolio, main, resume } = this.state.resumeData;
     return (
-      <Suspense fallback={<h1>loading..</h1>}>
+      <Suspense fallback={<h1 className='loading'>loading..</h1>}>
         <div className='app'>
           <Nav />
           <Route path='/' exact render={props => <Home main={main} />} />
