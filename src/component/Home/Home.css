@@ -46,11 +46,12 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .hero-text-wrapper {
     display: flex;
     flex-direction: column;
     text-shadow: 3px 3px 5px black;
+    height: 50vh;
   }
 
   .hero-text h1 {
@@ -67,7 +68,7 @@
   }
 
   .hero-text p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .splash-img {
