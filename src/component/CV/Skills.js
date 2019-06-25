@@ -13,13 +13,13 @@ export default props => {
 
   return (
     <div className='row skill'>
-      <div className='three columns header-col'>
+      <div className='skills-wrapper'>
         <h2>
           <span>Programming</span>
         </h2>
       </div>
 
-      <div className='nine columns main-col'>
+      <div className='bars-wrapper'>
         <div className='bars'>
           <ul className='skills'>{skills}</ul>
         </div>
