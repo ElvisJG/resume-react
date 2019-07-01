@@ -1,13 +1,14 @@
-import React, { PureComponent, Suspense, lazy } from 'react';
-import { Route } from 'react-router-dom';
+import React, { PureComponent } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import resumeData from './resumeData.json';
 
 import Nav from './component/Navigation/Navbar';
-// import Home from "./component/Home/Homepage";
+import Home from './component/Home/Homepage';
 import CV from './component/CV/CV';
 import Portfolio from './component/Portfolio/Portfolio';
-const Home = lazy(() => import('./component/Home/Homepage'));
+// const Home = lazy(() => import('./component/Home/Homepage'));
 // import Contact from './component/Contact/ContactForm';
 // const Contact = lazy(() => import("./component/Contact/ContactForm"));
 
@@ -24,20 +25,25 @@ export default class App extends PureComponent {
     return (
       <div className='app'>
         <Nav />
-        <Suspense fallback={<h1 className='loading'>loading..</h1>}>
-          <Route path='/' exact render={props => <Home main={main} />} />
-        </Suspense>
         <Route
-          path='/cv'
-          exact
-          render={props => <CV resume={resume} main={main} />}
+          render={({ location }) => (
+            <TransitionGroup>
+              <CSSTransition timeout={450} classNames='fade' key={location.key}>
+                <Switch location={location}>
+                  <Route path='/' exact render={() => <Home main={main} />} />
+                  <Route
+                    path='/cv'
+                    render={() => <CV resume={resume} main={main} />}
+                  />
+                  <Route
+                    path='/portfolio'
+                    render={() => <Portfolio portfolio={portfolio} />}
+                  />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
         />
-        <Route
-          path='/portfolio'
-          exact
-          render={props => <Portfolio portfolio={portfolio} />}
-        />
-        {/* <Route path='/contact' exact render={props => <Contact />} /> */}
       </div>
     );
   }
