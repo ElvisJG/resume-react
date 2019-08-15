@@ -2,7 +2,7 @@
   "main": {
     "name": "Elvis Gonzalez",
     "occupation": "Web Developer",
-    "cv_description": "Front End Web Developer",
+    "cv_description": "Full Stack Web Developer",
     "description": "Techie and Foodie by heart, located in historic Charleston, SC. I am passionate about improving, learning, and teaching code!",
     "image": "https://avatars1.githubusercontent.com/u/44843903?s=400&u=a5283f0ced5bbdecf1b13d8f4ee2cae96a533fd3&v=4",
     "bio": "I love learning new things, teaching others, and sealife! 🐢 My main programming experience is in JavaScript, although I have academic experience in other languages, such as Java and Visual Basic. I am currently working with Atlas Technologies, Inc as a Software Tester. Working for Atlas has given me a flexible opportunity that has allowed me to learn a variety of things in a fairly short amount of time. I am also enrolled into Lambda School, a full stack immersive, in order to fill gaps in my knowledge and stay on top of new and developing technologies!",
@@ -72,27 +72,27 @@
     "skills": [
       {
         "name": "JavaScript",
-        "confidence": "80%"
+        "confidence": "85%"
       },
       {
-        "name": "React",
-        "confidence": "80%"
+        "name": "React/Redux",
+        "confidence": "85%"
       },
       {
         "name": "Node.js",
-        "confidence": "60%"
+        "confidence": "70%"
       },
       {
         "name": "CSS",
-        "confidence": "80%"
+        "confidence": "99%"
       },
       {
         "name": "HTML5",
-        "confidence": "80%"
+        "confidence": "99%"
       },
       {
-        "name": "MongoDB",
-        "confidence": "50%"
+        "name": "Express",
+        "confidence": "80%"
       },
       {
         "name": "GIT",
