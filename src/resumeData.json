@@ -80,7 +80,11 @@
       },
       {
         "name": "Node.js",
-        "confidence": "70%"
+        "confidence": "75%"
+      },
+      {
+        "name": "Express",
+        "confidence": "80%"
       },
       {
         "name": "CSS",
@@ -89,10 +93,6 @@
       {
         "name": "HTML5",
         "confidence": "99%"
-      },
-      {
-        "name": "Express",
-        "confidence": "80%"
       },
       {
         "name": "GIT",
