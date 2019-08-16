@@ -5,7 +5,7 @@ import home from './home.jpg';
 export default props => {
   const { name, occupation, address, description } = props.main;
   return (
-    <div className='page'>
+    <div className='page-home'>
       <div className='home-wrapper'>
         <img className='splash-img' src={home} alt={description} />
         <div className='hero-text-wrapper'>
