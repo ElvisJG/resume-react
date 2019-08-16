@@ -107,8 +107,16 @@
         "category": "Wanderlust's Marketing Page, developed using HTML, CSS, SCSS, and JS",
         "image": "wanderlust.jpg",
         "url": "https://marketing-wanderlust.netlify.com/",
-        "source": "{wanderlust}",
+        "source": "./wanderlust.jpg",
         "alt": "Wanderlust Screenshot"
+      },
+      {
+        "title": "Dev Desk",
+        "category": "Full Stack Single Page Application, developed using React, Redux, Axios, Express, Node, and SCSS",
+        "image": "devdesk.jpg",
+        "url": "https://keen-austin-73856b.netlify.com/",
+        "source": "./devdesk.jpg",
+        "alt": "DevDesk Screenshot"
       }
     ]
   }
