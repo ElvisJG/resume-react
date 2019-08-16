@@ -17,7 +17,7 @@ export default props => {
                 <div className='portfolio-hero-text'>
                   <h1>{p.title}</h1>
                   <h3>{p.category}</h3>
-                  <a href={p.url}>
+                  <a href={p.url} target='_blank' rel='noopener noreferrer'>
                     <button>Visit {p.title}</button>
                   </a>
                 </div>
