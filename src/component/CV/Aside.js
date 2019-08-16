@@ -16,10 +16,18 @@ export default props => {
         <br />
         <p>{email}</p>
         <div className='icons'>
-          <a href='https://www.linkedin.com/in/elvisjg/'>
+          <a
+            href='https://www.linkedin.com/in/elvisjg/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <FaLinkedin size='3rem' />
           </a>
-          <a href='https://github.com/ElvisJG'>
+          <a
+            href='https://github.com/ElvisJG'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <FaGithubSquare size='3rem' />
           </a>
         </div>
