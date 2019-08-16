@@ -72,19 +72,19 @@
     "skills": [
       {
         "name": "JavaScript",
-        "confidence": "85%"
-      },
-      {
-        "name": "React/Redux",
-        "confidence": "85%"
-      },
-      {
-        "name": "Node.js",
         "confidence": "75%"
       },
       {
+        "name": "React/Redux",
+        "confidence": "70%"
+      },
+      {
+        "name": "Node.js",
+        "confidence": "65%"
+      },
+      {
         "name": "Express",
-        "confidence": "80%"
+        "confidence": "75%"
       },
       {
         "name": "CSS",
