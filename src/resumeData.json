@@ -5,7 +5,7 @@
     "cv_description": "Full Stack Web Developer",
     "description": "Techie and Foodie by heart, located in historic Charleston, SC. I am passionate about improving, learning, and teaching code!",
     "image": "https://avatars1.githubusercontent.com/u/44843903?s=400&u=a5283f0ced5bbdecf1b13d8f4ee2cae96a533fd3&v=4",
-    "bio": "I love learning new things, teaching others, and sealife! 🐢 My main programming experience is in JavaScript, although I have academic experience in other languages, such as Java and Visual Basic. I am currently working with Atlas Technologies, Inc as a Software Tester. Working for Atlas has given me a flexible opportunity that has allowed me to learn a variety of things in a fairly short amount of time. I am also enrolled into Lambda School, a full stack immersive, in order to fill gaps in my knowledge and stay on top of new and developing technologies!",
+    "bio": "I love learning new things, teaching others, and sealife! 🐢 My main programming experience is in JavaScript, although I have academic experience in other languages, such as Java and Visual Basic. I am currently working with Atlas Technologies, Inc as a Software Tester. Working for Atlas has given me a flexible opportunity that has allowed me to learn test driven design, best practices, and good documentation practices. I am also enrolled in Lambda School, under their Full Stack Web Development track, in order to fill gaps in my knowledge and stay on top of new and developing technologies!",
     "prointerests": "JavaScript, React, Node.JS, Express.JS, MongoDB, Python, Ruby, TDD, A11Y, Gatsby",
     "contactmessage": "Thanks for checking out my resume!",
     "spoken": "Bilingual English/Spanish",
@@ -72,31 +72,38 @@
     "skills": [
       {
         "name": "JavaScript",
-        "confidence": "75%"
+        "confidence": "75%",
+        "icon": "DiJavascript"
       },
       {
         "name": "React/Redux",
-        "confidence": "70%"
+        "confidence": "70%",
+        "icon": "DiReact"
       },
       {
         "name": "Node.js",
-        "confidence": "65%"
-      },
-      {
-        "name": "Express",
-        "confidence": "75%"
+        "confidence": "65%",
+        "icon": ""
       },
       {
         "name": "CSS",
-        "confidence": "99%"
+        "confidence": "99%",
+        "icon": "DiCss3"
       },
       {
         "name": "HTML5",
-        "confidence": "99%"
+        "confidence": "99%",
+        "icon": "DiHtml5"
       },
       {
         "name": "GIT",
-        "confidence": "100%"
+        "confidence": "100%",
+        "icon": "DiGitBranch"
+      },
+      {
+        "name": "Linux",
+        "confidence": "70%",
+        "icon": "DiRedhat"
       }
     ]
   },

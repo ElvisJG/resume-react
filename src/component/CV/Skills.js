@@ -18,7 +18,6 @@ export default props => {
           <span>Programming</span>
         </h2>
       </div>
-
       <div className='bars-wrapper'>
         <div className='bars'>
           <ul className='skills'>{skills}</ul>
