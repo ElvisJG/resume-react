@@ -89,12 +89,18 @@ em {
 /*             Aside Bars                */
 /*---------------------------------------*/
 
+.row-skill {
+  width: 350px;
+}
+
 .bars {
-  width: 95%;
+  width: 100%;
   float: left;
   padding: 0;
   text-align: left;
+  width: 100%;
 }
+
 .bars .skills {
   margin-top: 36px;
   list-style: none;
@@ -109,6 +115,7 @@ em {
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 10px #000000;
+  min-width: 100%;
 }
 
 .bars li em {
@@ -135,6 +142,7 @@ em {
   height: 42px;
   line-height: 42px;
   border-radius: 3px 0 0 3px;
+  max-width: 90%;
 }
 
 /*---------------------------------------*/

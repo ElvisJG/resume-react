@@ -8,9 +8,6 @@ import Nav from './component/Navigation/Navbar';
 import Home from './component/Home/Homepage';
 import CV from './component/CV/CV';
 import Portfolio from './component/Portfolio/Portfolio';
-// const Home = lazy(() => import('./component/Home/Homepage'));
-// import Contact from './component/Contact/ContactForm';
-// const Contact = lazy(() => import("./component/Contact/ContactForm"));
 
 export default class App extends PureComponent {
   constructor() {
