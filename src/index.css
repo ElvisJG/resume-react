@@ -141,7 +141,6 @@ table {
 
 .page {
   position: absolute;
-  top: 100px;
   height: calc(100vh - 100px);
   left: 0;
   right: 0;
