@@ -144,6 +144,7 @@ table {
   height: calc(100vh - 100px);
   left: 0;
   right: 0;
+  overflow-y: scroll
 }
 
 .page-home {
@@ -153,7 +154,6 @@ table {
   left: 0;
   right: 0;
   overflow: hidden;
-  overflow-y: scroll
 }
 
 /*---------------------------------------*/
