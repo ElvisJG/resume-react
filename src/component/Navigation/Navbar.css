@@ -23,7 +23,7 @@
 
 .sections a {
   text-decoration: none;
-  color: #1793d1;
+  color: #119983;
   font-weight: bold;
   width: 100%;
   line-height: 100px;
@@ -34,7 +34,7 @@
 }
 
 .sections a.active {
-  background: #1793d1;
+  background: #119983;
   color: #09091a;
 }
 
