@@ -3,7 +3,7 @@ import './Portfolio.css';
 
 export default props => {
   return (
-    <div className='page'>
+    <div className='page-portfolio'>
       <div className='portfolio-wrapper'>
         {props.portfolio.project.map(p => (
           <div className='profile-card' key={p.title}>

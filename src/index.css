@@ -157,6 +157,16 @@ table {
   overflow: hidden;
 }
 
+.page-portfolio {
+  position: absolute;
+  top: 100px;
+  height: calc(100vh - 100px);
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  background: linear-gradient(45deg, #333, #555);
+}
+
 /*---------------------------------------*/
 /*           CSS Transitions             */
 /*---------------------------------------*/

@@ -19,7 +19,8 @@
   height: 100%;
   width: 90%;
   justify-self: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.42), 0 6px 20px 0 rgba(0, 0, 0, 0.21);
+  border-radius: 12px;
 }
 
 .portfolio-hero-text {
@@ -41,11 +42,26 @@ button {
   padding: 1rem;
   font-size: 2rem;
   color: white;
-  background: #1793d1;
-  border: 1px solid white;
+  background-image: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 1s;
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   outline: none;
+}
+
+button:hover,
+button:focus {
+  background-position: right;
 }
 
 @media only screen and (max-width: 600px) {
