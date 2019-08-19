@@ -164,7 +164,9 @@ table {
   left: 0;
   right: 0;
   overflow-y: scroll;
-  background: linear-gradient(45deg, #333, #555);
+  background: linear-gradient(45deg, rgb(109, 192, 190), rgb(11, 73, 25));
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*---------------------------------------*/
