@@ -22,13 +22,11 @@
 }
 
 .hero-text h1:nth-child(1) {
-  margin-bottom: -1rem;
   font-size: 12rem;
 }
 
 .hero-text h3 {
   font-size: 4rem;
-  margin-bottom: 1rem;
 }
 
 .hero-text p {
@@ -43,6 +41,11 @@
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+}
+
+.animated-div {
+  height: auto;
+  margin: 1rem auto;
 }
 
 @media only screen and (max-width: 1600px) {

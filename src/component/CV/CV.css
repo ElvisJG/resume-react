@@ -12,7 +12,7 @@ em {
 }
 
 .main-section {
-  width: 79%;
+  width: 80%;
   float: right;
 }
 
@@ -40,7 +40,6 @@ em {
 .aside {
   width: 20%;
   height: 100%;
-
   float: left;
   display: flex;
   flex-flow: column nowrap;
@@ -90,11 +89,15 @@ em {
 /*---------------------------------------*/
 
 .row-skill {
-  width: 350px;
+  width: auto;
+}
+
+.skills-wrapper h2 {
+  font-size: 3rem;
+  margin: 0 auto;
 }
 
 .bars {
-  width: 100%;
   float: left;
   padding: 0;
   text-align: left;
@@ -115,18 +118,19 @@ em {
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 10px #000000;
-  min-width: 100%;
   animation: slide-in 1s reverse;
 }
 
 .bars li em {
   font: 1rem 'opensans-bold', sans-serif;
-  color: #0577b2;
+  color: white;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: normal;
-  position: relative;
-  top: -20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .bar-expand {
@@ -138,8 +142,8 @@ em {
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 10px #000000;
   padding-right: 24px;
-  background: #119983;
-  /* background-image: linear-gradient(
+  /* background: #119983; */
+  background-image: linear-gradient(
     45deg,
     rgb(16, 86, 126) 0%,
     rgb(16, 86, 126) 12.5%,
@@ -157,10 +161,10 @@ em {
     rgb(18, 221, 136) 87.5%,
     rgb(18, 243, 138) 87.5%,
     rgb(18, 243, 138) 100%
-  ); */
+  );
   background-size: 250%;
-  animation: bars-animation 1.25s 1s linear infinite alternate-reverse;
-  display: inline-block;
+  /* animation: bars-animation 1.25s 1s linear infinite alternate-reverse;
+  display: inline-block; */
   height: 42px;
   line-height: 42px;
   border-radius: 3px 0 0 3px;
@@ -245,7 +249,7 @@ em {
 
 .cv-school p {
   text-align: right;
-  margin: 0;
+  margin: 1rem 0;
 }
 
 /*---------------------------------------*/
@@ -279,7 +283,7 @@ em {
   }
 
   .cv-school p {
-    color: #0577b2;
+    color: #119983;
     text-decoration: underline;
   }
 }
@@ -355,7 +359,7 @@ em {
   .cv-school p {
     text-align: center;
     font-weight: bold;
-    margin: 1rem 0rem -1rem;
+    margin: 1rem 0rem -0.5rem;
   }
 
   .cv-experience {

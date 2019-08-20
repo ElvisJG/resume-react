@@ -12,11 +12,9 @@ export default props => {
   });
 
   return (
-    <div className='row skill'>
+    <div className='row-skill'>
       <div className='skills-wrapper'>
-        <h2>
-          <span>Programming</span>
-        </h2>
+        <h2>Programming</h2>
       </div>
       <div className='bars-wrapper'>
         <div className='bars'>
