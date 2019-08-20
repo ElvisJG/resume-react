@@ -8,18 +8,18 @@ export default props => {
     opacity: 1,
     transform: 'translate3d(0,0px,0)',
     from: { opacity: 0, transform: 'translate3d(0,-40px,0)' },
-    delay: '400'
+    delay: '1400'
   });
   const fadeInTwo = useSpring({
     opacity: 1,
     transform: 'translate3d(0,0px,0)',
     from: { opacity: 0, transform: 'translate3d(0,-40px,0)' },
-    delay: '1500'
+    delay: '2500'
   });
   const fadeInThree = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    delay: '3000'
+    delay: '4000'
   });
   const { name, occupation, address, description } = props.main;
   return (
