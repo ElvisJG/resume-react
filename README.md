@@ -1,10 +1,11 @@
 # Resume Single Page Application made with React, React-Icons, React-Spring, and React-Transition-Group
 
 ## Contents
-    1. Installation
-    2. Editing
-    3. Components
-    4. Future Implementations
+
+1. Installation
+2. Editing
+3. Components
+4. Future Implementations
 
 ## 1. Installation
 
