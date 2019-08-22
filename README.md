@@ -29,4 +29,4 @@ You should be able to edit almost all items within the site by editing the resum
 
 - Contact Form, i'll be adding one of these in the near future to allow for an email to be sent from a potential recruiter from the site into your inbox.
 
-If you have any suggestions, feel free to contact me on [Twitter]: https://twitter.com/RealMinMax
+If you have any suggestions, feel free to contact me on [Twitter](https://twitter.com/RealMinMax)
