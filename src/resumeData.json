@@ -5,7 +5,7 @@
     "cv_description": "Full Stack Web Developer",
     "description": "Techie and Foodie by heart, located in historic Charleston, SC. I am passionate about improving, learning, and teaching code!",
     "image": "https://avatars1.githubusercontent.com/u/44843903?s=400&u=a5283f0ced5bbdecf1b13d8f4ee2cae96a533fd3&v=4",
-    "bio": "I love learning new things, teaching others, and sealife! 🐢 My main programming experience is in JavaScript, although I have academic experience in other languages, such as Java and Visual Basic. I am currently working with Atlas Technologies, Inc as a Software Tester. Working for Atlas has given me a flexible opportunity that has allowed me to learn test driven design, best practices, and good documentation practices. I am also enrolled in Lambda School, under their Full Stack Web Development track, in order to fill gaps in my knowledge and stay on top of new and developing technologies!",
+    "bio": "I love learning new things, teaching others, and sealife! 🐢 My main programming experience is in JavaScript, although I have academic experience in other languages, such as Java and Visual Basic. I am currently working with Atlas Technologies, Inc as a Software Tester. Working for Atlas has given me a flexible opportunity that has allowed me to get hands-on experience in designing, developing, maintaining, and integrating web applications with responsive, accessible, and pixel-perfect user interfaces. I am also enrolled in Lambda School, under their Full Stack Web Development track, in order to fill gaps in my knowledge and stay on top of new and developing technologies!",
     "prointerests": "JavaScript, React, Node.JS, Express.JS, MongoDB, Python, Ruby, TDD, A11Y, Gatsby",
     "contactmessage": "Thanks for checking out my resume!",
     "spoken": "Bilingual English/Spanish",
@@ -54,13 +54,13 @@
         "company": "Atlas Technologies, Inc",
         "title": "Software Tester",
         "duration": "July 2018 - Present",
-        "description": "Creating and Updating Test Cases/Requirements, Expanding and Maintaining the functions of various web applications, Implemented SSO throughout Applications using LDAP, and Managing Internal Wiki page/Documentation"
+        "description": "Successfully deployed, integrated, and extended various web applications using Apache, PHP, Node, SQL, LDAP, Python, Bash, and JavaScript. Deployed new systems and networking devices that are compliant to DISA STIG using Ansible. Implemented a SSO solution across multiple web applications using LDAP and PHP. Designed various scripts to generate messages within Naval Messaging formatting constraints. Deployed and Managed an internal Wiki to increase testing speed and provide specialized information."
       },
       {
         "company": "Gonzalez Woodwork",
         "title": "Office Manager",
         "duration": "December 2008 - May 2017",
-        "description": "Deployed and maintained a MySQL Database for a small business that tracked invoices, resources, and products | Maintained Customer Relations using Workforce | Reached out to other businesses and set up professional relationships"
+        "description": "Deployed and maintained an SQL database for a small business that tracked invoices, resources, and products. Managed Customer Relations using Workforce. Designed invoice form application. Developed and launched daily standup procedure and weekly meetings."
       },
       {
         "company": "Walt Disney World Resort",
