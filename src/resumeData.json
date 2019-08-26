@@ -10,7 +10,6 @@
     "contactmessage": "Thanks for checking out my resume!",
     "spoken": "Bilingual English/Spanish",
     "notions": "French & Italian Notions",
-    "email": "ElvisJGonzalez@gmail.com",
     "address": {
       "city": "Charleston",
       "state": "South Carolina"
@@ -54,56 +53,35 @@
         "company": "Atlas Technologies, Inc",
         "title": "Software Tester",
         "duration": "July 2018 - Present",
-        "description": "Successfully deployed, integrated, and extended various web applications using Apache, PHP, Node, SQL, LDAP, Python, Bash, and JavaScript. Deployed new systems and networking devices that are compliant to DISA STIG using Ansible. Implemented a SSO solution across multiple web applications using LDAP and PHP. Designed various scripts to generate messages within Naval Messaging formatting constraints. Deployed and Managed an internal Wiki to increase testing speed and provide specialized information."
+        "description": [
+          "Successfully deployed, integrated, and extended various web applications using Apache, PHP, Node, SQL, LDAP, Python, Bash, and JavaScript.",
+          "Deployed new systems and networking devices that are compliant to DISA STIG using Ansible.",
+          "Implemented a SSO solution across multiple web applications using LDAP and PHP.",
+          "Designed various scripts to generate messages within Naval Messaging formatting constraints.",
+          "Deployed and Managed an internal Wiki to increase testing speed and provide specialized information."
+        ]
       },
       {
         "company": "Gonzalez Woodwork",
         "title": "Office Manager",
         "duration": "December 2008 - May 2017",
-        "description": "Deployed and maintained an SQL database for a small business that tracked invoices, resources, and products. Managed Customer Relations using Workforce. Designed invoice form application. Developed and launched daily standup procedure and weekly meetings."
+        "description": [
+          "Deployed and maintained an SQL database for a small business that tracked invoices, resources, and products.",
+          "Managed Customer Relations using Workforce.",
+          "Designed invoice form application.",
+          "Developed and launched daily standup procedure and weekly meetings."
+        ]
       },
       {
         "company": "Walt Disney World Resort",
         "title": "Cook II",
         "duration": "June 2013 - February 2014",
-        "description": "Created Experiences for Guests, Learned how to be part of a team, Tested critical thinking and throughput. I am including this because it's an experience like no other, and I'm glad to have had the opportunity."
-      }
-    ],
-    "skills": [
-      {
-        "name": "JavaScript",
-        "confidence": "75%",
-        "icon": "DiJavascript"
-      },
-      {
-        "name": "React/Redux",
-        "confidence": "70%",
-        "icon": "DiReact"
-      },
-      {
-        "name": "Node.js",
-        "confidence": "65%",
-        "icon": ""
-      },
-      {
-        "name": "CSS",
-        "confidence": "99%",
-        "icon": "DiCss3"
-      },
-      {
-        "name": "HTML5",
-        "confidence": "99%",
-        "icon": "DiHtml5"
-      },
-      {
-        "name": "GIT",
-        "confidence": "100%",
-        "icon": "DiGitBranch"
-      },
-      {
-        "name": "Linux",
-        "confidence": "70%",
-        "icon": "DiRedhat"
+        "description": [
+          "Created Experiences for Guests",
+          "Learned how to be part of a team",
+          "Tested critical thinking and throughput.",
+          "I am including this because it's an experience like no other, and I'm glad to have had the opportunity."
+        ]
       }
     ]
   },
@@ -111,19 +89,42 @@
     "project": [
       {
         "title": "Wanderlust",
-        "category": "Wanderlust's Marketing Page, developed using HTML, CSS, SCSS, and JS",
+        "category": "Wanderlust's Marketing Page",
         "image": "wanderlust.jpg",
         "url": "https://marketing-wanderlust.netlify.com/",
         "source": "./wanderlust.jpg",
-        "alt": "Wanderlust Screenshot"
+        "alt": "Wanderlust Screenshot",
+        "technologies": ["HTML", "SCSS", "JS"],
+        "notable": [
+          "Animated Hamburger Menu on Mobile",
+          "Animated Carousel",
+          "Fully responsive"
+        ]
       },
       {
         "title": "Dev Desk",
-        "category": "Full Stack Single Page Application, developed using React, Redux, Axios, Express, Node, and SCSS",
+        "category": "Desktop Full Stack Single Page Application",
         "image": "devdesk.jpg",
         "url": "https://keen-austin-73856b.netlify.com/",
         "source": "./devdesk.jpg",
-        "alt": "DevDesk Screenshot"
+        "alt": "DevDesk Screenshot",
+        "technologies": [
+          "React",
+          "Redux",
+          "Axios",
+          "NodeJS",
+          "Express",
+          "SCSS",
+          "Webpack",
+          "Babel",
+          "SQLite3"
+        ],
+        "notable": [
+          "Registration",
+          "Login",
+          "Token Authentication with JSON Web Tokens",
+          "Multi-Step Form"
+        ]
       }
     ]
   }

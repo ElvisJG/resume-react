@@ -12,8 +12,15 @@ export default props => {
           <em>
             <p>{exp.company}</p>
           </em>
-          <p>{exp.title}</p>
-          <p>{exp.description}</p>
+          <p className='exp-title'>{exp.title}</p>
+          {exp.description.map(bullet => {
+            return (
+              <ul key={bullet} className='exp-ul'>
+                <li className='exp-li'>{bullet}</li>
+              </ul>
+            );
+          })}
+          {/* <p>{exp.description}</p> */}
           <div className='duration'>
             <p>{exp.duration}</p>
           </div>
