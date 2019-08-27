@@ -2,20 +2,25 @@
 
 ## Contents
 
-1. Installation
-2. Editing
-3. Components
-4. Future Implementations
+1. Demo
+2. Installation
+3. Editing
+4. Components
+5. Future Implementations
 
-## 1. Installation
+## 1. Demo
+
+[Demo](https://www.elvisjg.com/) I'm currently using this as my personal resume site and frequently updating it.
+
+## 2. Installation
 
 To install, fork or clone down this repository. Navigate to the repository using terminal/shell and npm i from root.
 
-## 2. Editing
+## 3. Editing
 
 You should be able to edit almost all items within the site by editing the resumeData.json file located within /src/
 
-## 3. Components
+## 4. Components
 
     * CV
     * Contact ***This is a future implementation***
@@ -23,7 +28,7 @@ You should be able to edit almost all items within the site by editing the resum
     * Navigation
     * Portfolio
 
-## 4. Future Implementations
+## 5. Future Implementations
 
 - The CV Section has been a problem area with inconsistent styling and W A L L S of text specifically under the experience section. To alleviate this, i'll be implementing a highly stylized component that will parallax or animate through bullet points and change the description string found within resumeData.json into an array. This will allow for more information to be displayed in a far more interesting way.
 
