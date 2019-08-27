@@ -1,9 +1,13 @@
 import React from 'react';
 
+import useModal from '../hooks/useModal';
+import Modal from './Modal';
+
 import { FaLinkedin, FaEnvelope, FaGithubSquare } from 'react-icons/fa';
 
 export default props => {
   const { email, spoken, notions, address } = props.main;
+  const { isShowing, toggle } = useModal();
 
   return (
     <div className='aside'>
@@ -18,9 +22,10 @@ export default props => {
       <div className='aside-section'>
         <h2>Links</h2>
         <div className='icons'>
-          <a href='mailto:ElvisJGonzalez@gmail.com' rel='noopener noreferrer'>
+          <button onClick={toggle}>
             <FaEnvelope size='3rem' />
-          </a>
+          </button>
+          <Modal isShowing={isShowing} hide={toggle} />
           <a
             href='https://www.linkedin.com/in/elvisjg/'
             target='_blank'

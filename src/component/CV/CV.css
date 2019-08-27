@@ -77,8 +77,14 @@ em {
   margin: 0.5rem;
 }
 
-.icons a:nth-child(1) {
+.icons button {
   color: #f1d592;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+  margin: 0.5rem;
 }
 
 .icons a:nth-child(2) {
@@ -174,7 +180,7 @@ em {
 }
 
 /*---------------------------------------*/
-/*                Contact                */
+/*           Contact Modal               */
 /*---------------------------------------*/
 
 .cm-form {
@@ -187,6 +193,16 @@ em {
   font-weight: bold;
   padding: 4rem;
   border-radius: 12px;
+  box-shadow: -20px 15px 10px rgba(13, 156, 106, 0.25);
+}
+
+.form-close {
+  font-size: 3rem;
+  color: #11c687;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
 }
 
 .cm-form label {
@@ -207,6 +223,12 @@ em {
 
 .cm-form p {
   margin: 0rem 1rem 1rem 1rem;
+}
+
+.cm-form h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .cm-form button {
@@ -234,6 +256,13 @@ em {
     rgb(18, 243, 138) 87.5%,
     rgb(18, 243, 138) 100%
   );
+}
+
+.modal-overlay {
+  background: rgba(9, 9, 26, 0.4);
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 /*---------------------------------------*/

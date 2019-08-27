@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { MdClose } from 'react-icons/md';
 
 const encode = data => {
   return Object.keys(data)
@@ -31,12 +32,9 @@ export default class Contact extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <form
-        onSubmit={this.handleSubmit}
-        className='cm-form'
-        netlify
-        netlify-honeypot='bot-field'
-      >
+      <form onSubmit={this.handleSubmit} className='cm-form'>
+        <MdClose className='form-close' onClick={this.props.hide} />
+        <h1>Contact Me</h1>
         <p>
           <label>
             Your Name:{' '}

@@ -6,7 +6,6 @@ import Aside from './Aside';
 import Int from './Interests';
 import Edu from './Education';
 import Exp from './Experience';
-import Contact from './Contact';
 
 export default props => {
   return (
@@ -18,7 +17,6 @@ export default props => {
           <Int main={props.main} />
           <Exp resume={props.resume} />
           <Edu resume={props.resume} />
-          <Contact />
         </div>
       </div>
     </div>
