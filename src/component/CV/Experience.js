@@ -20,7 +20,6 @@ export default props => {
               </ul>
             );
           })}
-          {/* <p>{exp.description}</p> */}
           <div className='duration'>
             <p>{exp.duration}</p>
           </div>
