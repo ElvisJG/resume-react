@@ -23,7 +23,7 @@ export default props => {
                     <div className='tech'>
                       <h3>
                         Technologies Used:{' '}
-                        <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
+                        <TextLoop springConfig={{ stiffness: 150, damping: 8 }}>
                           {p.technologies.map(tech => {
                             return <span>{tech}</span>;
                           })}
