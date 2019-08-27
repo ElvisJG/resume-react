@@ -1,41 +1,79 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function Contact() {
-  return (
-    <div>
-      <form action='POST' data-netlify='true' className='cm-form'>
-        <div className='fields'>
-          <div className='text-field'>
-            <input type='text' name='name' id='name' placeholder='Name' />
-          </div>
-          <div className='text-field'>
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
+export default class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: '', email: '', message: '' };
+  }
+
+  /* Here’s the juicy bit for posting the form submission */
+
+  handleSubmit = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state })
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <form
+        onSubmit={this.handleSubmit}
+        className='cm-form'
+        netlify
+        netlify-honeypot='bot-field'
+      >
+        <p>
+          <label>
+            Your Name:{' '}
+            <input
+              type='text'
+              name='name'
+              value={name}
+              onChange={this.handleChange}
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email:{' '}
             <input
               type='email'
               name='email'
-              id='email'
-              placeholder='johndoe@example.com'
+              value={email}
+              onChange={this.handleChange}
             />
-          </div>
-          <div className='text-field'>
-            <input
-              type='tel'
-              name='phone'
-              id='phone'
-              placeholder='Phone Number'
-            />
-          </div>
-          <div className='msg-field'>
+          </label>
+        </p>
+        <p>
+          <label>
+            Message:{' '}
             <textarea
               name='message'
-              id='message'
-              placeholder='Message'
-              rows='7'
+              value={message}
+              rows='4'
+              onChange={this.handleChange}
             />
-          </div>
-          <div data-netlify-recaptcha='true'></div>
-          <button type='submit'>Send It!</button>
-        </div>
+          </label>
+        </p>
+        <p>
+          <button type='submit'>Send</button>
+        </p>
       </form>
-    </div>
-  );
+    );
+  }
 }

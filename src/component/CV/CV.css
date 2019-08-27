@@ -89,26 +89,6 @@ em {
   color: #24292e;
 }
 
-/* background-image: linear-gradient(
-  45deg,
-  rgb(16, 86, 126) 0%,
-  rgb(16, 86, 126) 12.5%,
-  rgb(16, 108, 128) 12.5%,
-  rgb(16, 108, 128) 25%,
-  rgb(17, 131, 129) 25%,
-  rgb(17, 131, 129) 37.5%,
-  rgb(17, 153, 131) 37.5%,
-  hsl(170, 80%, 33%) 50%,
-  rgb(17, 176, 133) 50%,
-  rgb(17, 176, 133) 62.5%,
-  rgb(17, 198, 135) 62.5%,
-  hsl(159, 84%, 42%) 75%,
-  rgb(18, 221, 136) 75%,
-  rgb(18, 221, 136) 87.5%,
-  rgb(18, 243, 138) 87.5%,
-  rgb(18, 243, 138) 100%
-); */
-
 /*---------------------------------------*/
 /*          Content Section              */
 /*---------------------------------------*/
@@ -191,6 +171,69 @@ em {
   font-size: 1.5rem;
   line-height: 2rem;
   list-style-type: square;
+}
+
+/*---------------------------------------*/
+/*                Contact                */
+/*---------------------------------------*/
+
+.cm-form {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #119983;
+  font-weight: bold;
+  padding: 4rem;
+  border-radius: 12px;
+}
+
+.cm-form label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cm-form input,
+.cm-form textarea {
+  color: #119983;
+  font-weight: bold;
+  line-height: 1.5rem;
+  width: 300px;
+}
+
+.cm-form p {
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+.cm-form button {
+  padding: 0rem;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+  border: 1px solid white;
+  background-image: linear-gradient(
+    45deg,
+    rgb(16, 86, 126) 0%,
+    rgb(16, 86, 126) 12.5%,
+    rgb(16, 108, 128) 12.5%,
+    rgb(16, 108, 128) 25%,
+    rgb(17, 131, 129) 25%,
+    rgb(17, 131, 129) 37.5%,
+    rgb(17, 153, 131) 37.5%,
+    hsl(170, 80%, 33%) 50%,
+    rgb(17, 176, 133) 50%,
+    rgb(17, 176, 133) 62.5%,
+    rgb(17, 198, 135) 62.5%,
+    hsl(159, 84%, 42%) 75%,
+    rgb(18, 221, 136) 75%,
+    rgb(18, 221, 136) 87.5%,
+    rgb(18, 243, 138) 87.5%,
+    rgb(18, 243, 138) 100%
+  );
 }
 
 /*---------------------------------------*/
