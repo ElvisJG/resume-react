@@ -19,9 +19,10 @@ const Modal = ({ isShowing, hide }) => {
     <>
       {isShowing
         ? createPortal(
-            <div className='modal-overlay'>
+            <>
+              <div className='modal-overlay' onClick={hide} />
               <Contact hide={hide} />
-            </div>,
+            </>,
             document.body
           )
         : null}
