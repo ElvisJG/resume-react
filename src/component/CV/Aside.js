@@ -42,6 +42,7 @@ export default props => {
           </a>
         </div>
       </div>
+
       <div className='aside-section'>
         <h2>Languages</h2>
         <p>{spoken}</p>

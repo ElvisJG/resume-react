@@ -15,6 +15,7 @@ const Modal = ({ isShowing, hide }) => {
 
     return () => document.removeEventListener('keydown', keyListener);
   });
+
   return (
     <>
       {isShowing
