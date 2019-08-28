@@ -68,9 +68,16 @@ export default class Contact extends Component {
             />
           </label>
         </p>
-        <p>
-          <button type='submit'>Send</button>
-        </p>
+        <div className='form-btns'>
+          <p>
+            <button type='submit'>Send</button>
+          </p>
+          <p>
+            <button className='close-btn' onClick={this.props.hide}>
+              Close
+            </button>
+          </p>
+        </div>
       </form>
     );
   }

@@ -103,4 +103,17 @@ button:focus {
   .portfolio-hero-text h1 {
     margin-bottom: 1rem;
   }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tech h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

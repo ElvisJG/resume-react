@@ -232,6 +232,10 @@ em {
   margin-bottom: 2rem;
 }
 
+.close-btn {
+  display: none;
+}
+
 .cm-form button {
   padding: 0rem;
   outline: none;
@@ -283,6 +287,91 @@ em {
   .cv-school p {
     color: #119983;
     text-decoration: underline;
+  }
+
+  .cm-form {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .cm-form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cm-form p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cm-form h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .form-close {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .cm-form {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cm-form p {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cm-form h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+
+  .form-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-btns button {
+    width: 200px;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .form-close {
+    display: none;
   }
 }
 
