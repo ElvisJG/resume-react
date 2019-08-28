@@ -32,15 +32,7 @@ export default class Contact extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <form
-        name='contact'
-        method='post'
-        onSubmit={this.handleSubmit}
-        className='cm-form'
-        data-netlify='true'
-        data-netlify-honeypot='bot-field'
-      >
-        <input type='hidden' name='form-name' value='contact' />
+      <form onSubmit={this.handleSubmit} className='cm-form'>
         <MdClose className='form-close' onClick={this.props.hide} />
         <h1>Contact Me</h1>
         <p>
