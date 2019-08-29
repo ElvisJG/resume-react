@@ -1,5 +1,6 @@
 import React from 'react';
 import TextLoop from 'react-text-loop';
+import { DiGithubAlt } from 'react-icons/di';
 
 import './Portfolio.css';
 
@@ -10,11 +11,14 @@ export default props => {
         {props.portfolio.project.map(p => (
           <div className='profile-card' key={p.title}>
             <div className='mapwrapper'>
-              <img
-                className='portfolio-img'
-                src={require(`${p.source}`)}
-                alt={p.alt}
-              />
+              <a href={p.url} target='_blank' rel='noopener noreferrer'>
+                <img
+                  className='portfolio-img'
+                  src={require(`${p.source}`)}
+                  alt={p.alt}
+                />
+              </a>
+
               <div className='portfolio-hero'>
                 <div className='portfolio-hero-text'>
                   <h1>{p.title}</h1>
@@ -30,6 +34,7 @@ export default props => {
                         </TextLoop>
                       </h3>
                     </div>
+
                     <div className='notable'>
                       <h3>Notable Features</h3>
                       {p.notable.map(tech => {
@@ -41,8 +46,19 @@ export default props => {
                       })}
                     </div>
                   </div>
-                  <a href={p.url} target='_blank' rel='noopener noreferrer'>
-                    <button>Visit {p.title}</button>
+                  <a href={p.repo} target='_blank' rel='noopener noreferrer'>
+                    <button className='gh-btn'>
+                      Check out the
+                      <DiGithubAlt
+                        size='2.5rem'
+                        className='gh-icon'
+                        style={{
+                          verticalAlign: 'text-top',
+                          margin: '0 auto',
+                          padding: '0'
+                        }}
+                      />
+                    </button>
                   </a>
                 </div>
               </div>
