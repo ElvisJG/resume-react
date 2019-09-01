@@ -3,8 +3,11 @@
 /*---------------------------------------*/
 
 .cv-wrapper {
+  top: 100px;
+  position: absolute;
   color: #09091a;
   margin: 0rem 5rem;
+  font-family: 'Cabin', sans-serif;
 }
 
 em {
@@ -19,12 +22,14 @@ em {
 .cv-title {
   text-align: center;
   margin: 1rem 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .cv-title h1 {
-  font-size: 4rem;
-  font-weight: bolder;
+  font-size: 5rem;
+  font-weight: bold;
   color: #119983;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .cv-title h2 {
@@ -95,6 +100,14 @@ em {
   color: #24292e;
 }
 
+.lang {
+  height: 3rem;
+}
+
+.spoken-notions {
+  margin-top: 1rem;
+}
+
 /*---------------------------------------*/
 /*          Content Section              */
 /*---------------------------------------*/
@@ -111,6 +124,7 @@ em {
 .cv-section h3 {
   font-weight: bold;
   margin: 1rem 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .cv-section:nth-child(1) h3 {

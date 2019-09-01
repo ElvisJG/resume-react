@@ -2,10 +2,12 @@
 /*              Portfolio                */
 /*---------------------------------------*/
 .portfolio-wrapper {
-  margin: 0 auto;
+  margin: 100px auto 0;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  height: 100vh;
+  z-index: 1;
 }
 
 .profile-card {
@@ -57,7 +59,7 @@
 }
 
 .tech {
-  margin-top: 2rem;
+  margin: 1rem 0 0;
 }
 
 .tech li {

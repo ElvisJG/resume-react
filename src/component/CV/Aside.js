@@ -15,8 +15,6 @@ export default props => {
         <h2>About</h2>
         <p>{address.city}</p>
         <p>{address.state}</p>
-        <br />
-        <p>{email}</p>
       </div>
 
       <div className='aside-section'>
@@ -44,9 +42,11 @@ export default props => {
       </div>
 
       <div className='aside-section'>
-        <h2>Languages</h2>
-        <p>{spoken}</p>
-        <p>{notions}</p>
+        <h2 className='lang'>Languages</h2>
+        <div className='spoken-notions'>
+          <p>{spoken}</p>
+          <p>{notions}</p>
+        </div>
       </div>
     </div>
   );
