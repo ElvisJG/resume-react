@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useModal from '../hooks/useModal';
+import Modal from '../CV/Modal';
 
 export default function Links() {
+  const { isShowing, toggle } = useModal();
   return (
     <div className='links'>
       <NavLink exact to='/cv' className='nav__link'>
@@ -10,9 +13,10 @@ export default function Links() {
       <NavLink exact to='/portfolio' className='nav__link'>
         Portfolio
       </NavLink>
-      <NavLink exact to='/contact' className='nav__link'>
+      <button onClick={toggle} className='nav__link'>
         Contact
-      </NavLink>
+      </button>
+      <Modal isShowing={isShowing} hide={toggle} />
     </div>
   );
 }

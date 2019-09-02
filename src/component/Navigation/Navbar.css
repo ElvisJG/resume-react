@@ -48,6 +48,9 @@
   font-family: 'Roboto Condensed', sans-serif;
   text-decoration: none;
   color: #119983;
+  outline: none;
+  background: none;
+  border: none;
 }
 
 .link-effect {

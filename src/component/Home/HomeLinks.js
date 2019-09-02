@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
+import useModal from '../hooks/useModal';
+import Modal from '../CV/Modal';
 
 export default function HomeLinks() {
+  const { isShowing, toggle } = useModal();
   const dropOne = useSpring({
     opacity: 1,
     transform: 'translate3d(0,0px,0)',
@@ -36,9 +39,10 @@ export default function HomeLinks() {
         </NavLink>
       </animated.div>
       <animated.div style={dropThree} className='animated-link'>
-        <NavLink exact to='/contact' className='home__links'>
+        <button onClick={toggle} className='home__links'>
           Contact
-        </NavLink>
+        </button>
+        <Modal isShowing={isShowing} hide={toggle} />
       </animated.div>
     </div>
   );
