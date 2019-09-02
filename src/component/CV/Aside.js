@@ -6,7 +6,7 @@ import Modal from './Modal';
 import { FaLinkedin, FaEnvelope, FaGithubSquare } from 'react-icons/fa';
 
 export default props => {
-  const { email, spoken, notions, address } = props.main;
+  const { spoken, notions, address } = props.main;
   const { isShowing, toggle } = useModal();
 
   return (
