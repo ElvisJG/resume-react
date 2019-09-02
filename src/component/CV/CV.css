@@ -110,6 +110,7 @@ em {
 
 .modal-open-btn {
   outline: none;
+  cursor: pointer;
 }
 
 /*---------------------------------------*/
@@ -146,34 +147,46 @@ em {
 
 .cv-edu {
   display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.cv-school {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.cv-school h4 {
+  float: left;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-right: 1.5rem;
+  color: #11c687;
+}
+
+.cap {
+  color: rgba(17, 153, 130, 1);
+}
+
+.cv-school h5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: rgba(17, 153, 130, 0.5);
+}
+
+.cv-edu-mid {
+  width: 100%;
 }
 
 .cv-edu p {
   margin: 0.5rem 0 0;
 }
 
-.cv-edu h5 {
-  font-size: 1.5rem;
-  text-align: left;
-  margin-right: 1rem;
-  width: 150px;
-}
-
-.cv-edu-mid {
-  text-align: center;
-  width: 100%;
-}
-
 .cv-edu-mid p:nth-child(1) {
   margin-bottom: -1rem;
-}
-
-.cv-school p {
-  text-align: right;
-  margin: 1rem 0;
 }
 
 /*---------------------------------------*/
