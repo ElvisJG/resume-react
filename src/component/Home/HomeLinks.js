@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
 import useModal from '../hooks/useModal';
 import Modal from '../CV/Modal';
@@ -39,7 +39,7 @@ export default function HomeLinks() {
         </NavLink>
       </animated.div>
       <animated.div style={dropThree} className='animated-link'>
-        <button onClick={toggle} className='home__links'>
+        <button onClick={toggle} className='home__links btn'>
           Contact
         </button>
         <Modal isShowing={isShowing} hide={toggle} />
