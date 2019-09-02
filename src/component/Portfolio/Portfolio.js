@@ -1,12 +1,14 @@
 import React from 'react';
 import { DiGithubAlt } from 'react-icons/di';
 import Particles from './Particles';
+import Nav from '../Navigation/Navbar';
 
 import './Portfolio.css';
 
 export default props => {
   return (
     <div className='page-portfolio'>
+      <Nav />
       <Particles>
         <div className='portfolio-wrapper'>
           {props.portfolio.project.map(p => (

@@ -4,7 +4,6 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import resumeData from './resumeData.json';
 
-import Nav from './component/Navigation/Navbar';
 import Home from './component/Home/Homepage';
 import CV from './component/CV/CV';
 import Portfolio from './component/Portfolio/Portfolio';
@@ -21,7 +20,6 @@ export default class App extends PureComponent {
     const { portfolio, main, resume } = this.state.resumeData;
     return (
       <div className='app'>
-        <Nav />
         <Route
           render={({ location }) => (
             <TransitionGroup>

@@ -3,6 +3,8 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
+import Links from './Links';
+
 const Nav = () => {
   return (
     <div className='nav-wrapper'>
@@ -12,17 +14,7 @@ const Nav = () => {
         </NavLink>
       </div>
       <div className='link-effect'>
-        <div className='links'>
-          <NavLink exact to='/cv' className='nav__link'>
-            CV
-          </NavLink>
-          <NavLink exact to='/portfolio' className='nav__link'>
-            Portfolio
-          </NavLink>
-          <NavLink exact to='/contact' className='nav__link'>
-            Contact
-          </NavLink>
-        </div>
+        <Links />
         <div className='link__mirror'>
           <p className='reflection'>CV</p>
           <p className='reflection'>Portfolio</p>
