@@ -1,0 +1,48 @@
+.hamburger__btn {
+  margin: 2rem;
+  height: 100px;
+  width: 100px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 2;
+  background-color: #09091a;
+}
+
+.hamburger__btn-line {
+  width: 80px;
+  margin: 0.5rem auto;
+  height: 10px;
+  background: white;
+  z-index: 0;
+  border-radius: 30px;
+}
+
+.sidedrawer {
+  background: green;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.drawer__links {
+  color: white;
+  margin: auto 2rem;
+  font-family: 'Cabin', sans-serif;
+  font-size: 10rem;
+  outline: none;
+  background: none;
+  border: none;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #09091a;
+  z-index: 99;
+}

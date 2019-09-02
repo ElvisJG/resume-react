@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  z-index: 99;
+  z-index: 1;
   position: absolute;
   -webkit-touch-callout: none;
   -webkit-user-select: none;

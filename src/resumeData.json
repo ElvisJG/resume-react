@@ -33,19 +33,22 @@
         "school": "Lambda School",
         "degree": "Certificate, Full Stack Web Development",
         "graduated": "Currently Enrolled",
-        "description": "Full Stack Course offers practical training by creating fully developed, Responsive, and Tested websites/applications"
+        "description": "Full Stack Course offers practical training by creating fully developed, Responsive, and Tested websites/applications",
+        "complete": "false"
       },
       {
         "school": "Fayetteville Tech",
         "degree": "Associates, Computer Science",
         "graduated": "March 2015",
-        "description": "Focus was on Computer Programming and OOP using Java, Visual Basic, and Android Studio"
+        "description": "Focus was on Computer Programming and OOP using Java, Visual Basic, and Android Studio",
+        "complete": "true"
       },
       {
         "school": "Le Cordon Bleu",
         "degree": "Certificate, Culinary Arts",
         "graduated": "March 2013",
-        "description": "Food Basics, National Environmental Health Association Certification, Baking, Culinary Experiences Globally"
+        "description": "Food Basics, National Environmental Health Association Certification, Baking, Culinary Experiences Globally",
+        "complete": "true"
       }
     ],
     "work": [
