@@ -20,7 +20,7 @@ export default props => {
       <div className='aside-section'>
         <h2>Links</h2>
         <div className='icons'>
-          <button onClick={toggle}>
+          <button onClick={toggle} className='modal-open-btn'>
             <FaEnvelope size='3rem' />
           </button>
           <Modal isShowing={isShowing} hide={toggle} />
