@@ -76,6 +76,20 @@
   transform: scale(1, -1);
   filter: blur(2px);
 }
+@media only screen and (max-width: 1025px) {
+  .logo {
+    line-height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .logo {
+    font-size: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 7rem;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .nav-wrapper {

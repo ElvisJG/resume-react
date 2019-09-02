@@ -27,14 +27,12 @@ em {
 
 .cv-title h1 {
   font-size: 5rem;
-  font-weight: bold;
   color: #119983;
   font-family: 'Permanent Marker', cursive;
 }
 
 .cv-title h2 {
   font-size: 2.5rem;
-  font-weight: bold;
   color: #09091a;
 }
 
@@ -57,14 +55,9 @@ em {
   border-bottom: 1px solid #09091a;
 }
 
-.aside-section:nth-child(3) {
-  border-bottom: none;
-}
-
 .aside-section h2 {
   font-size: 2.5rem;
   color: #11c687;
-  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
@@ -76,6 +69,7 @@ em {
 .icons {
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .icons a {
@@ -87,8 +81,6 @@ em {
   padding: 0;
   background: none;
   border: none;
-  border-radius: none;
-  box-shadow: none;
   margin: 0.5rem;
 }
 
@@ -122,12 +114,7 @@ em {
   margin: 0 1rem;
 }
 
-.cv-section em {
-  font-weight: bold;
-}
-
 .cv-section h3 {
-  font-weight: bold;
   margin: 1rem 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -146,11 +133,7 @@ em {
 /*---------------------------------------*/
 
 .cv-edu {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 1rem;
-  align-items: flex-start;
-  justify-content: space-evenly;
 }
 
 .cv-school {
@@ -159,10 +142,8 @@ em {
 }
 
 .cv-school h4 {
-  float: left;
   font-size: 2rem;
   text-align: center;
-  line-height: 2rem;
   margin-right: 1.5rem;
   color: #11c687;
 }
@@ -173,12 +154,7 @@ em {
 
 .cv-school h5 {
   font-size: 1.5rem;
-  line-height: 2rem;
   color: rgba(17, 153, 130, 0.5);
-}
-
-.cv-edu-mid {
-  width: 100%;
 }
 
 .cv-edu p {
@@ -194,10 +170,7 @@ em {
 /*---------------------------------------*/
 
 .cv-experience {
-  display: flex;
-  flex-flow: wrap;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .exp-title {
@@ -207,7 +180,6 @@ em {
 .exp-li {
   font-size: 1.5rem;
   line-height: 2rem;
-  list-style-type: square;
 }
 
 /*---------------------------------------*/
@@ -221,7 +193,6 @@ em {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #119983;
-  font-weight: bold;
   padding: 4rem;
   border-radius: 12px;
   box-shadow: -20px 15px 10px rgba(13, 156, 106, 0.25);
@@ -276,7 +247,6 @@ em {
   font-size: 2rem;
   color: white;
   line-height: 3rem;
-  margin: 2rem 0;
   border: 1px solid white;
   background-image: linear-gradient(
     45deg,
@@ -302,15 +272,24 @@ em {
 .modal-overlay {
   background: rgba(9, 9, 26, 0.8);
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  filter: blur(20px);
 }
 
 /*---------------------------------------*/
 /*             Media Query               */
 /*---------------------------------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (width: 411px) {
+  .cm-form {
+    top: 450px !important;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
   .cv-title h2 {
     font-size: 2rem;
   }
@@ -325,47 +304,21 @@ em {
     margin: 1rem 0;
   }
 
-  .cv-school p {
-    color: #119983;
-    text-decoration: underline;
-  }
-
-  .cm-form {
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-    box-shadow: none;
+  .modal-overlay {
+    background-color: #119983;
+    filter: blur(0);
   }
 
   .cm-form label {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .cm-form p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .form-btns {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .cm-form h1 {
     font-size: 3rem;
-    margin: 1rem;
-  }
-
-  .close-btn {
-    display: block;
   }
 
   .form-close {
@@ -373,24 +326,59 @@ em {
   }
 
   .cm-form button {
+    display: flex;
+    flex-direction: column;
     font-size: 2rem;
     color: white;
     line-height: 3rem;
-    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-overlay {
+    background-color: #119983;
+    filter: blur(0);
+    height: 100%;
+  }
+
+  .form-elements p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cm-form {
+    flex-direction: column;
+    top: 220px;
+  }
+
+  .form-btns {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    line-height: 3rem;
+  }
+
+  .title-text h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
   }
 }
 
 @media only screen and (max-width: 850px) {
   .cm-form {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
     width: 100vw;
     border-radius: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: none;
+  }
+
+  .modal-overlay {
+    background-color: #119983;
+    filter: blur(0);
+    height: 100%;
   }
 
   .cm-form p {
@@ -403,6 +391,7 @@ em {
   .cm-form h1 {
     font-size: 3rem;
     margin: 1rem;
+    padding: 0.5rem;
   }
 
   .form-btns {
