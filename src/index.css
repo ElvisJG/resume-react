@@ -143,6 +143,7 @@ table {
 .page-CV {
   position: absolute;
   height: 100vh;
+  background-color: whitesmoke;
   left: 0;
   right: 0;
   overflow-y: scroll;

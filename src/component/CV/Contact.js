@@ -32,39 +32,41 @@ export default class Contact extends Component {
       <form onSubmit={this.handleSubmit} className='cm-form'>
         <MdClose className='form-close' onClick={this.props.hide} />
         <h1>Contact Me</h1>
-        <p>
-          <label>
-            Your Name:{' '}
-            <input
-              type='text'
-              name='name'
-              value={name}
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email:{' '}
-            <input
-              type='email'
-              name='email'
-              value={email}
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:{' '}
-            <textarea
-              name='message'
-              value={message}
-              rows='4'
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
+        <div className='form-elements'>
+          <p>
+            <label>
+              Your Name:{' '}
+              <input
+                type='text'
+                name='name'
+                value={name}
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email:{' '}
+              <input
+                type='email'
+                name='email'
+                value={email}
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message:{' '}
+              <textarea
+                name='message'
+                value={message}
+                rows='4'
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
+        </div>
         <div className='form-btns'>
           <p>
             <button type='submit'>Send</button>
