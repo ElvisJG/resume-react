@@ -88,6 +88,11 @@
     font-size: 1.5rem;
   }
 
+  .home-links {
+    position: absolute;
+    margin: 0 auto;
+  }
+
   .splash-img {
     height: 100vh;
     width: 100%;

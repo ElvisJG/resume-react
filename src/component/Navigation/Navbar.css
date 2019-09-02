@@ -96,3 +96,12 @@
     margin-top: -33px;
   }
 }
+
+@media only screen and (max-height: 500px) {
+  .logo {
+    margin: 0 auto;
+  }
+  .nav-wrapper {
+    justify-content: center;
+  }
+}

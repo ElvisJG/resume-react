@@ -498,3 +498,29 @@ em {
     text-decoration: underline;
   }
 }
+
+@media only screen and (max-height: 500px) {
+  .cm-form button {
+    font-size: 2rem;
+    color: white;
+    line-height: 3rem;
+    margin: 1rem 2rem;
+  }
+
+  .cm-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .cm-form label {
+    font-size: 2rem;
+    width: 600px;
+  }
+
+  .cm-form input,
+  .cm-form textarea {
+    width: 400px;
+    margin: 0.75rem;
+  }
+}
