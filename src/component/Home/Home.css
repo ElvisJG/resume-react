@@ -19,20 +19,18 @@
 }
 
 .hero-text h1 {
-  font-size: 10rem;
+  font-size: 6rem;
+  z-index: 1;
 }
 
 .hero-text h1:nth-child(1) {
-  font-size: 12rem;
+  font-size: 8rem;
+  line-height: 15rem;
 }
 
 .hero-text h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Cabin', sans-serif;
-}
-
-.hero-text p {
-  font-size: 2rem;
 }
 
 .splash-img {
@@ -46,8 +44,8 @@
 }
 
 .animated-div {
-  height: auto;
-  margin: 1rem auto;
+  background-color: none;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 1600px) {

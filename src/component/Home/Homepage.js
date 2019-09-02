@@ -14,12 +14,12 @@ export default props => {
     opacity: 1,
     transform: 'translate3d(0,0px,0)',
     from: { opacity: 0, transform: 'translate3d(0,-40px,0)' },
-    delay: '2500'
+    delay: '2200'
   });
   const fadeInThree = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    delay: '4000'
+    delay: '3500'
   });
   const { name, occupation, address, description } = props.main;
   return (

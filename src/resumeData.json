@@ -124,10 +124,10 @@
           "SQLite3"
         ],
         "notable": [
-          "Registration",
-          "Login",
           "Token Authentication with JSON Web Tokens",
-          "Multi-Step Form"
+          "Multi-Step Form",
+          "Registration",
+          "Login"
         ]
       }
     ]
