@@ -94,6 +94,7 @@
         "category": "Wanderlust's Marketing Page",
         "image": "wanderlust.jpg",
         "url": "https://marketing-wanderlust.netlify.com/",
+        "repo": "https://github.com/marketing-wanderlust/wanderlust",
         "source": "./wanderlust.jpg",
         "alt": "Wanderlust Screenshot",
         "technologies": ["HTML", "SCSS", "JS"],
@@ -108,6 +109,7 @@
         "category": "Desktop Full Stack Single Page Application",
         "image": "devdesk.jpg",
         "url": "https://keen-austin-73856b.netlify.com/",
+        "repo": "https://github.com/devdesk-que/Dev-Desk-FE",
         "source": "./devdesk.jpg",
         "alt": "DevDesk Screenshot",
         "technologies": [
@@ -122,10 +124,10 @@
           "SQLite3"
         ],
         "notable": [
-          "Registration",
-          "Login",
           "Token Authentication with JSON Web Tokens",
-          "Multi-Step Form"
+          "Multi-Step Form",
+          "Registration",
+          "Login"
         ]
       }
     ]

@@ -2,69 +2,98 @@
 /*              Portfolio                */
 /*---------------------------------------*/
 .portfolio-wrapper {
-  margin: 0 auto;
+  margin: 100px auto 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  z-index: 1;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .profile-card {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
+  display: block;
   text-align: center;
+  height: 900px;
+  position: relative;
 }
 
 .portfolio-img {
-  height: 100%;
-  width: 90%;
-  justify-self: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.42), 0 6px 20px 0 rgba(0, 0, 0, 0.21);
+  height: 400px;
+  width: 400px;
   border-radius: 12px;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    1px 6px 12px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.portfolio-img:hover {
+  box-shadow: 2px 8px 12px 0 rgba(0, 0, 0, 0.55),
+    2px 12px 24px 0 rgba(0, 0, 0, 0.6);
 }
 
 .portfolio-hero-text {
-  font-size: 6rem;
+  font-size: 5rem;
   color: white;
   text-shadow: 2px 2px 5px #09091a;
   text-align: center;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .portfolio-hero-text h3 {
   font-size: 2.25rem;
+  padding: 0.2rem;
 }
 
-.notable-tech {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
+.port-title {
+  font-family: 'Cabin', sans-serif;
 }
 
 .notable {
-  margin-top: 2rem;
+  margin: 1rem 0;
 }
+
 .notable h3 {
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: #f9f871;
+}
+
+.notable ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category {
+  padding-bottom: 0.3rem !important;
 }
 
 .notable li {
   font-size: 2rem;
+  width: 500px;
+  padding-bottom: 0.2rem;
 }
 
 .tech {
-  margin-top: 2rem;
+  margin: 1rem 0 0;
 }
 
 .tech li {
   font-size: 2rem;
 }
 
-button {
-  margin-top: 2rem;
+.button {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.gh-btn {
+  text-align: center;
+  margin: 0 auto 1.5rem;
   line-height: 3rem;
   border-radius: 8px;
   padding: 1rem;
@@ -83,18 +112,37 @@ button {
   background-position: left;
   transition: background-position 1s;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 2px 6px 8px 0 rgba(73, 34, 34, 0.35),
+    2px 6px 12px 0 rgba(0, 0, 0, 0.4);
   outline: none;
 }
 
 button:hover,
 button:focus {
   background-position: right;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
+  .portfolio-wrapper {
+    flex-direction: column;
+    margin-top: calc(100px + 2rem);
+    height: 100%;
+  }
+
+  .profile-card {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .button {
+    position: relative;
+  }
+
   .portfolio-img {
-    width: 95%;
+    width: 90%;
+    max-height: 90%;
   }
 
   .portfolio-hero-text {
@@ -102,5 +150,69 @@ button:focus {
   }
   .portfolio-hero-text h1 {
     margin-bottom: 1rem;
+  }
+
+  .notable li {
+    width: 100%;
+  }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tech h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .portfolio-wrapper {
+    flex-direction: column;
+    margin-top: calc(100px + 2rem);
+    height: 100%;
+  }
+
+  .profile-card {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .button {
+    position: relative;
+  }
+
+  .portfolio-img {
+    width: 400px;
+    max-height: 90%;
+  }
+
+  .portfolio-hero-text {
+    font-size: 4rem;
+  }
+  .portfolio-hero-text h1 {
+    margin-bottom: 1rem;
+  }
+
+  .notable li {
+    width: 100%;
+  }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tech h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

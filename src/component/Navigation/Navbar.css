@@ -2,44 +2,109 @@
 /*              Navigation               */
 /*---------------------------------------*/
 
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  float: left;
+  color: #119983;
+  margin-left: 5.5rem;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
 .nav-wrapper {
   height: 100px;
   width: 100%;
   display: flex;
   text-align: center;
   align-items: center;
-  background: #09091a;
-  border-bottom: 2px solid #2b638f;
-  position: static;
-}
-
-.sections {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.sections a {
+  justify-content: space-between;
   text-decoration: none;
+  z-index: 99;
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.links {
   color: #119983;
-  font-weight: bold;
-  width: 100%;
-  line-height: 100px;
-  font-size: 1.5rem;
+  margin-right: 5.5rem;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+  font-family: 'Cabin', sans-serif;
+  border-bottom: 1px solid #119983;
 }
 
-.sections a.active {
-  background: #119983;
-  color: #09091a;
+.nav__link {
+  margin: 0 1.5rem;
+  font-size: 1.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  color: #119983;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.link-effect {
+  display: flex;
+  flex-direction: column;
+}
+
+.link__mirror {
+  display: flex;
+  font-size: 1.5rem;
+  margin-top: -3px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  color: rgba(17, 153, 130, 0.3);
+  text-shadow: 0px 25px 4px rgb(17, 153, 131);
+}
+
+.link__mirror p {
+  margin: 0 1.5rem;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scale(1, -1);
+  filter: blur(2px);
 }
 
 @media only screen and (max-width: 600px) {
-  .sections a {
-    line-height: 100px;
+  .nav-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+
+  .logo {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .links {
+    margin: 2rem auto;
+  }
+
+  .link__mirror {
+    margin-top: -33px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .logo {
+    margin: 0 auto;
+  }
+  .nav-wrapper {
+    justify-content: center;
   }
 }

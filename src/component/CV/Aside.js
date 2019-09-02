@@ -1,9 +1,13 @@
 import React from 'react';
 
+import useModal from '../hooks/useModal';
+import Modal from './Modal';
+
 import { FaLinkedin, FaEnvelope, FaGithubSquare } from 'react-icons/fa';
 
 export default props => {
-  const { email, spoken, notions, address } = props.main;
+  const { spoken, notions, address } = props.main;
+  const { isShowing, toggle } = useModal();
 
   return (
     <div className='aside'>
@@ -11,16 +15,15 @@ export default props => {
         <h2>About</h2>
         <p>{address.city}</p>
         <p>{address.state}</p>
-        <br />
-        <p>{email}</p>
       </div>
 
       <div className='aside-section'>
         <h2>Links</h2>
         <div className='icons'>
-          <a href='mailto:ElvisJGonzalez@gmail.com' rel='noopener noreferrer'>
+          <button onClick={toggle} className='modal-open-btn'>
             <FaEnvelope size='3rem' />
-          </a>
+          </button>
+          <Modal isShowing={isShowing} hide={toggle} />
           <a
             href='https://www.linkedin.com/in/elvisjg/'
             target='_blank'
@@ -37,10 +40,13 @@ export default props => {
           </a>
         </div>
       </div>
+
       <div className='aside-section'>
-        <h2>Languages</h2>
-        <p>{spoken}</p>
-        <p>{notions}</p>
+        <h2 className='lang'>Languages</h2>
+        <div className='spoken-notions'>
+          <p>{spoken}</p>
+          <p>{notions}</p>
+        </div>
       </div>
     </div>
   );

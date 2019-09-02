@@ -1,6 +1,7 @@
 import React from 'react';
 import './CV.css';
 
+import Nav from '../Navigation/Navbar';
 import Title from './Title';
 import Aside from './Aside';
 import Int from './Interests';
@@ -10,6 +11,7 @@ import Exp from './Experience';
 export default props => {
   return (
     <div className='page'>
+      <Nav />
       <div className='cv-wrapper'>
         <Title main={props.main} />
         <Aside main={props.main} resume={props.resume} />

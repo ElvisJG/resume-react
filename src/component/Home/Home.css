@@ -4,9 +4,14 @@
 
 .home-wrapper {
   width: 100%;
+  font-family: 'Pacifico', cursive;
 }
 
 .hero-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -14,27 +19,29 @@
   transform: translate(-50%, -50%);
   color: white;
   width: 100%;
+  height: 100vh;
   text-shadow: 2px 2px 4px #09091a;
 }
 
 .hero-text h1 {
-  font-size: 10rem;
+  font-size: 8rem;
+  z-index: 1;
 }
 
-.hero-text h1:nth-child(1) {
-  font-size: 12rem;
+.hero-text h2 {
+  font-size: 9rem;
+  line-height: 9.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .hero-text h3 {
-  font-size: 4rem;
-}
-
-.hero-text p {
-  font-size: 2rem;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Cabin', sans-serif;
 }
 
 .splash-img {
-  height: calc(100vh - 100px);
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   background-attachment: fixed;
@@ -43,25 +50,36 @@
   background-repeat: no-repeat;
 }
 
-.animated-div {
-  height: auto;
-  margin: 1rem auto;
+.home-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 60px;
 }
 
-@media only screen and (max-width: 1600px) {
-  .hero-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    text-shadow: 3px 3px 5px black;
-    height: calc(100vh - 100px);
-  }
+.home__links {
+  color: white;
+  margin: auto 2rem;
+  font-family: 'Cabin', sans-serif;
+  font-size: 2rem;
+  outline: none;
+  background: none;
+  border: none;
+  text-decoration: none;
+}
 
+@media only screen and (max-width: 800px) {
   .hero-text h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-top: 1.5rem;
   }
 
-  .hero-text h1:nth-child(1) {
+  .hero-text h2 {
     font-size: 4rem;
   }
 
@@ -83,16 +101,17 @@
 @media only screen and (max-height: 500px) {
   .hero-text-wrapper {
     text-shadow: 3px 3px 5px black;
-    height: calc(100vh - 100px);
+    top: 40%;
   }
 
   .hero-text h1 {
     font-size: 3.5rem;
-    margin-top: 1.5rem;
   }
 
-  .hero-text h1:nth-child(1) {
-    font-size: 2rem;
+  .hero-text h2 {
+    font-size: 4.5rem;
+    line-height: 3rem;
+    padding: 2.5rem;
   }
 
   .hero-text h3 {
@@ -102,5 +121,37 @@
   .hero-text p {
     margin-top: -0.5rem;
     font-size: 1rem;
+  }
+
+  .home-links {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-text h1 {
+    font-size: 4rem;
+    z-index: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 5rem;
+    line-height: 6rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-text h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Cabin', sans-serif;
+  }
+
+  .home-links {
+    width: 100%;
+  }
+
+  .home__links {
+    font-size: 1.5rem;
   }
 }
