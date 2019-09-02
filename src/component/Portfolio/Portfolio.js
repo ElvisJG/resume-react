@@ -25,9 +25,10 @@ export default props => {
 
               <div className='portfolio-hero-text'>
                 <div className='top-text'>
-                  <h1>{p.title}</h1>
-                  <h3>{p.category}</h3>
+                  <h1 className='port-title'>{p.title}</h1>
+                  <h3 className='category'>{p.category}</h3>
                 </div>
+
                 <div className='notable'>
                   <h3>Notable Features</h3>
                   {p.notable.map(tech => {

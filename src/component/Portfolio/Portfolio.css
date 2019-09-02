@@ -8,23 +8,29 @@
   align-items: flex-start;
   height: 100vh;
   z-index: 1;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   text-align: center;
-  height: 870px;
+  height: 900px;
   position: relative;
 }
 
 .portfolio-img {
   height: 400px;
   width: 400px;
-  justify-self: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.42), 0 6px 20px 0 rgba(0, 0, 0, 0.21);
   border-radius: 12px;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.25),
+    1px 6px 12px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.portfolio-img:hover {
+  box-shadow: 2px 8px 12px 0 rgba(0, 0, 0, 0.55),
+    2px 12px 24px 0 rgba(0, 0, 0, 0.6);
 }
 
 .portfolio-hero-text {
@@ -40,6 +46,11 @@
 
 .portfolio-hero-text h3 {
   font-size: 2.25rem;
+  padding: 0.2rem;
+}
+
+.port-title {
+  font-family: 'Cabin', sans-serif;
 }
 
 .notable {
@@ -57,9 +68,14 @@
   align-items: center;
 }
 
+.category {
+  padding-bottom: 0.3rem !important;
+}
+
 .notable li {
   font-size: 2rem;
   width: 500px;
+  padding-bottom: 0.2rem;
 }
 
 .tech {
@@ -73,10 +89,11 @@
 .button {
   bottom: 0;
   position: absolute;
+  width: 100%;
 }
 .gh-btn {
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
   line-height: 3rem;
   border-radius: 8px;
   padding: 1rem;
@@ -95,7 +112,8 @@
   background-position: left;
   transition: background-position 1s;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 2px 6px 8px 0 rgba(73, 34, 34, 0.35),
+    2px 6px 12px 0 rgba(0, 0, 0, 0.4);
   outline: none;
 }
 
@@ -108,10 +126,23 @@ button:focus {
 @media only screen and (max-width: 600px) {
   .portfolio-wrapper {
     flex-direction: column;
+    margin-top: calc(100px + 2rem);
+    height: 100%;
+  }
+
+  .profile-card {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .button {
+    position: relative;
   }
 
   .portfolio-img {
-    width: 95%;
+    width: 90%;
+    max-height: 90%;
   }
 
   .portfolio-hero-text {
@@ -119,6 +150,10 @@ button:focus {
   }
   .portfolio-hero-text h1 {
     margin-bottom: 1rem;
+  }
+
+  .notable li {
+    width: 100%;
   }
 
   .tech {

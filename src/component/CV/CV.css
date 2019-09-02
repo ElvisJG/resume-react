@@ -293,6 +293,11 @@ em {
     font-size: 2rem;
   }
 
+  .cv-title h1 {
+    margin: 2rem 0;
+    font-size: 4rem;
+  }
+
   .cv-section p {
     font-size: 1.5rem;
     margin: 1rem 0;
@@ -309,6 +314,7 @@ em {
     height: 100vh;
     width: 100%;
     border-radius: 0;
+    z-index: 99;
   }
 
   .cm-form label {
@@ -343,6 +349,13 @@ em {
 
   .form-close {
     display: none;
+  }
+
+  .cm-form button {
+    font-size: 2rem;
+    color: white;
+    line-height: 3rem;
+    margin: 2rem 0;
   }
 }
 

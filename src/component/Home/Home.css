@@ -35,6 +35,7 @@
 }
 
 .hero-text h3 {
+  margin-top: 1.5rem;
   font-size: 3rem;
   font-family: 'Cabin', sans-serif;
 }
@@ -69,20 +70,13 @@
   font-size: 2rem;
 }
 
-@media only screen and (max-width: 1600px) {
-  .hero-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    text-shadow: 3px 3px 5px black;
-    height: calc(100vh - 100px);
-  }
-
+@media only screen and (max-width: 800px) {
   .hero-text h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-top: 1.5rem;
   }
 
-  .hero-text h1:nth-child(1) {
+  .hero-text h2 {
     font-size: 4rem;
   }
 
@@ -104,16 +98,17 @@
 @media only screen and (max-height: 500px) {
   .hero-text-wrapper {
     text-shadow: 3px 3px 5px black;
-    height: calc(100vh - 100px);
+    top: 40%;
   }
 
   .hero-text h1 {
     font-size: 3.5rem;
-    margin-top: 1.5rem;
   }
 
-  .hero-text h1:nth-child(1) {
-    font-size: 2rem;
+  .hero-text h2 {
+    font-size: 4.5rem;
+    line-height: 3rem;
+    padding: 2.5rem;
   }
 
   .hero-text h3 {
@@ -123,5 +118,37 @@
   .hero-text p {
     margin-top: -0.5rem;
     font-size: 1rem;
+  }
+
+  .home-links {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-text h1 {
+    font-size: 4rem;
+    z-index: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 5rem;
+    line-height: 6rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-text h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Cabin', sans-serif;
+  }
+
+  .home-links {
+    width: 100%;
+  }
+
+  .home__links {
+    font-size: 1.5rem;
   }
 }
