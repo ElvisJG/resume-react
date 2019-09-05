@@ -1,0 +1,240 @@
+/*---------------------------------------*/
+/*                Home                   */
+/*---------------------------------------*/
+
+.home-wrapper {
+  font-family: 'Pacifico', cursive;
+  height: 100vh;
+
+  .hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    text-shadow: 2px 2px 4px #09091a;
+  }
+
+  .splash-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.hero-text h1 {
+  font-size: 8rem;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 9rem;
+  line-height: 9.5rem;
+  padding-bottom: 3.5rem;
+  width: 100vw;
+}
+
+.hero-text h3 {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  margin-bottom: 2rem;
+  height: 60px;
+
+  .home__links {
+    color: white;
+    margin: auto 2rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 2rem;
+    outline: none;
+    background: none;
+    border: none;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #09091a;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .hero-text h1 {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 7rem;
+  }
+
+  .hero-text h3 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  .hero-text h1 {
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .hero-text h2 {
+    font-size: 5rem;
+    line-height: 5.3rem;
+    margin: 0 auto;
+  }
+
+  .hero-text h3 {
+    margin: 0 auto;
+    padding: 2rem 0;
+    margin-top: -0.5rem;
+    font-size: 2rem;
+  }
+
+  .splash-img {
+    height: 100vh;
+    width: 100%;
+    background-size: auto;
+  }
+
+  .home-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto auto 0;
+    padding: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-text-wrapper {
+    margin-top: 40px;
+    height: 100%;
+
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .hero-text h1 {
+      width: 100vw;
+      font-size: 5rem;
+      line-height: auto;
+      display: block;
+    }
+
+    .hero-text h2 {
+      font-size: 4.5rem;
+      padding: 0.2rem 0 1.7rem;
+      display: block;
+    }
+
+    .hero-text h3 {
+      text-align: center;
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 3rem;
+    z-index: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 3rem;
+    line-height: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-text h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Cabin', sans-serif;
+  }
+
+  .home-links {
+    width: 100%;
+  }
+
+  .home__links {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .home-links {
+    left: -10px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .hero-text-wrapper {
+    top: 240px;
+    height: 100vh;
+  }
+
+  .hero-text h2 {
+    font-size: 4.7rem;
+    line-height: auto;
+    padding: 1rem;
+  }
+
+  .home-links {
+    position: absolute;
+    top: 400px;
+    left: -10px !important;
+    margin-top: 6rem;
+  }
+
+  .home-links .home__links {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-height: 375px) {
+  .hero-text-wrapper {
+    margin-top: 20px;
+  }
+
+  .hero-text h2 {
+    padding: 1rem 0 2.1rem;
+  }
+}
+
+@media only screen and (max-height: 320px) {
+  .hero-text h1 {
+    color: red;
+    display: none !important;
+  }
+}

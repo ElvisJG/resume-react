@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Home.scss';
 import home from './home.jpg';
 import { useSpring, animated } from 'react-spring';
 import HomeLinks from './HomeLinks';
@@ -45,10 +45,10 @@ export default props => {
                 A {occupation} located in {address.city}, {address.state}
               </h3>
             </animated.div>
-            <animated.div style={fadeInLinks} className='animated-div'>
-              <HomeLinks />
-            </animated.div>
           </div>
+          <animated.div style={fadeInLinks} className='animated-div'>
+            <HomeLinks />
+          </animated.div>
         </div>
       </div>
     </div>
