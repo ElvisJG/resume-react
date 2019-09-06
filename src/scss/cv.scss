@@ -1,0 +1,253 @@
+/*---------------------------------------*/
+/*             Title/General             */
+/*---------------------------------------*/
+
+.cv-wrapper {
+  top: 100px;
+  position: absolute;
+  color: $dark;
+  margin: 0rem 5rem;
+  font-family: 'Cabin', sans-serif;
+
+  .title-text {
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    &>h1 {
+      font-size: 5rem;
+      padding: 0.7rem 0;
+      color: $alt;
+      font-family: 'Permanent Marker', cursive;
+    }
+
+    &>h2 {
+      font-size: 2.5rem;
+      color: $dark;
+    }
+  }
+
+  em {
+    color: $alt;
+  }
+
+  .main-section {
+    width: 80%;
+    float: right;
+  }
+}
+
+/*---------------------------------------*/
+/*             Aside                     */
+/*---------------------------------------*/
+
+.aside {
+  width: 20%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+
+  .aside-section {
+    margin: 0rem 0.5rem 1rem;
+    text-align: end;
+    border-bottom: 1px solid $opaque;
+
+    &>h2 {
+      font-size: 2.5rem;
+      color: $main;
+      margin-bottom: 0.5rem;
+    }
+
+    &>p {
+      color: $alt;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    .linkedin {
+      color: $linkedIn;
+    }
+
+    .github {
+      color: $github;
+    }
+
+    &>button {
+      color: $mail;
+      padding: 0;
+      background: none;
+      border: none;
+      margin: 0.5rem;
+    }
+
+    &>a {
+      margin: 0.5rem;
+    }
+  }
+
+  .lang {
+    padding: 0 0 0.5rem;
+  }
+
+  .spoken-notions {
+
+    &>p {
+      color: $alt;
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+/*---------------------------------------*/
+/*              Interests                */
+/*---------------------------------------*/
+
+.interests-section {
+  margin: 0 1rem 1rem;
+
+  &>h3 {
+    font-size: 3rem;
+    font-family: $roboto;
+  }
+
+  &>p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+
+  p>em {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: $main;
+    vertical-align: bottom;
+  }
+}
+
+/*---------------------------------------*/
+/*             Experience                */
+/*---------------------------------------*/
+
+.experience-section {
+  margin: 0 1rem 1rem;
+
+  &>h3 {
+    font-size: 3rem;
+    font-family: $roboto;
+  }
+
+  .cv-experience {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid $opaque-alt;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &>p {
+      font-size: 1.4rem;
+    }
+
+    p>em {
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+    }
+
+    .exp-title {
+      color: $main;
+
+      margin-bottom: 0.5rem;
+    }
+
+    .exp-li {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .duration {
+      margin-top: 0.25rem;
+      color: $opaque;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding-bottom: 1.2rem;
+    }
+
+    &:last-child {
+      .duration {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/*---------------------------------------*/
+/*              Education                */
+/*---------------------------------------*/
+
+.education-section {
+  margin: 0 1rem 1rem;
+
+  &>h3 {
+    font-size: 3rem;
+    font-family: $roboto;
+  }
+
+  .cv-edu {
+    margin: 0.5rem 0 1rem;
+
+    .cv-school {
+      display: flex;
+      align-items: center;
+
+      &>h4 {
+        font-size: 2rem;
+        text-align: center;
+        margin-right: 1.5rem;
+        color: $main;
+      }
+
+      &>h5>em {
+        font-size: 1.5rem;
+        color: $alt;
+      }
+
+      .cap {
+        color: $alt;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .cv-edu-mid {
+      font-size: 1.5rem;
+
+      &>p {
+        margin: 0.5rem 0 0;
+      }
+
+      p>em {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+/*---------------------------------------*/
+/*             Media Query               */
+/*---------------------------------------*/
+
+@media only screen and (width: 411px) {}
+
+@media only screen and (max-width: 500px) {}
+
+@media only screen and (max-width: 1160px) {}
+
+@media only screen and (max-height: 500px) {}

@@ -98,7 +98,7 @@
         "image": "wanderlust.jpg",
         "url": "https://marketing-wanderlust.netlify.com/",
         "repo": "https://github.com/marketing-wanderlust/wanderlust",
-        "source": "./wanderlust.jpg",
+        "source": "wanderlust.jpg",
         "alt": "Wanderlust Screenshot",
         "technologies": ["HTML", "SCSS", "JS"],
         "notable": [
@@ -113,7 +113,7 @@
         "image": "devdesk.jpg",
         "url": "https://keen-austin-73856b.netlify.com/",
         "repo": "https://github.com/devdesk-que/Dev-Desk-FE",
-        "source": "./devdesk.jpg",
+        "source": "devdesk.jpg",
         "alt": "DevDesk Screenshot",
         "technologies": [
           "React",

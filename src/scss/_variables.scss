@@ -1,0 +1,55 @@
+// Text Imports
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap");
+
+// Text Exports
+$roboto: 'Roboto Condensed',
+sans-serif;
+$cabin: Cabin', sans-serif';
+$pacifico: 'Pacifico',
+cursive;
+
+// Theme
+$dark: #09091a;
+$main: #11c687;
+$alt: #119983;
+$opaque: #11998280;
+$opaque-alt: #1199824d;
+$mail: #f1d592;
+$linkedIn: #0577b2;
+$github: #24292e;
+
+// Disable Highlighting
+
+@mixin no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+// Navigation has a modal button that needs to be normalized
+@mixin reset-btn {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    color: inherit;
+    vertical-align: baseline;
+    overflow: visible;
+    background: transparent;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+}
+
+// Debug
+@mixin db($color) {
+    background-color: $color !important;
+    background: $color !important;
+}
