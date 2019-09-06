@@ -38,21 +38,18 @@
       &>h1 {
         font-family: $pacifico;
         font-size: 8rem;
-        @include db(red);
       }
 
       &>h2 {
         font-family: $pacifico;
         font-size: 9rem;
         padding: 3.5rem;
-        @include db(green);
       }
 
       &>h3 {
         margin-top: 1.5rem;
         font-size: 3rem;
         font-family: $cabin;
-        @include db(yellow);
       }
     }
 
