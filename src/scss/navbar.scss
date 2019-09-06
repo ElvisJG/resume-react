@@ -1,0 +1,66 @@
+/*---------------------------------------*/
+/*              Navigation               */
+/*---------------------------------------*/
+
+.nav-wrapper {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  @include no-select;
+
+  .link-effect {
+    display: flex;
+    flex-direction: column;
+
+    // Navbar links
+    .links {
+      color: $alt;
+      margin-right: 5.5rem;
+      border-bottom: 1px solid $alt;
+      font-family: $roboto;
+
+      .nav__btn {
+        @include reset-btn;
+      }
+
+      .nav__link {
+        margin: 0 1.5rem;
+        font-size: 1.5rem;
+        color: $alt;
+        text-decoration: none;
+      }
+    }
+
+    // Mirror Effect
+    .link__mirror {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-right: 5.5rem;
+
+      &>p {
+        margin: 0 1.5rem;
+        font-size: 1.5rem;
+        color: $opaque-alt;
+        filter: blur(2px);
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scale(1, -1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-height: 500px) {}

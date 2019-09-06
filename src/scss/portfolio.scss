@@ -1,0 +1,94 @@
+/*---------------------------------------*/
+/*              Portfolio                */
+/*---------------------------------------*/
+.portfolio-card-wrapper {
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 1;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 1080px;
+
+    .portfolio-hero-img {
+      padding: 2rem;
+
+      .portfolio-img {
+        height: 400px;
+        width: 400px;
+        border-radius: 12px;
+        box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.25),
+          1px 6px 12px 0 rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 2px 8px 12px 0 rgba(0, 0, 0, 0.55),
+            2px 12px 24px 0 rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+
+    .portfolio-hero-text {
+      font-size: 5rem;
+      color: white;
+      text-shadow: 2px 2px 5px #09091a;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .top-text {
+        &>h1 {
+          font-family: 'Cabin', sans-serif;
+        }
+
+        &>h3 {
+          font-size: 2.25rem;
+          padding: 0.2rem 0 0.4rem;
+        }
+      }
+    }
+
+    .notable {
+      margin: 1rem 0;
+
+      &>h3 {
+        font-size: 2.25rem;
+        padding: 0.2rem;
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      &>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &>li {
+          font-size: 2rem;
+          width: 500px;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+
+    .button {
+      padding: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-height: 500px) {}
