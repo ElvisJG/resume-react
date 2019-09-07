@@ -99,6 +99,8 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
   .home-wrapper {
     .hero-text-wrapper {
+      top: 45%;
+
       .animated-div {
 
         &>h1 {
@@ -133,6 +135,8 @@
 @media (min-width: 569px) and (max-width: 767px) {
   .home-wrapper {
     .hero-text-wrapper {
+      top: 45%;
+
       .animated-div {
 
         &>h1 {
@@ -167,6 +171,8 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .home-wrapper {
     .hero-text-wrapper {
+      top: 45%;
+
       .animated-div {
 
         &>h1 {
@@ -200,6 +206,8 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .home-wrapper {
     .hero-text-wrapper {
+      top: 45%;
+
       .animated-div {
 
         &>h1 {
@@ -219,6 +227,3 @@
     }
   }
 }
-
-/* large desktops and up ----------- */
-@media screen and (min-width: 1200px) {}
