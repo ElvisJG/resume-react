@@ -57,23 +57,6 @@
   }
 }
 
-/* Iphone 5/SE Landscape */
-@media screen and (max-height:320px) {
-  .nav-wrapper {
-    .link-effect {
-      .links {
-        .nav__btn {}
-
-        .nav__link {}
-      }
-
-      .link__mirror {
-        &>p {}
-      }
-    }
-  }
-}
-
 /* The DREADED iPhone 5/SE */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
   .nav-wrapper {
