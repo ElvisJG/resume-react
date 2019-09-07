@@ -1,6 +1,19 @@
 import styled from '@emotion/styled';
 
 export const Button = styled.button`
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  overflow: visible;
+  background: transparent;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  cursor: pointer;
   text-align: center;
   margin: 0 auto 1.5rem;
   line-height: 3rem;
@@ -20,10 +33,9 @@ export const Button = styled.button`
   background-size: 300%;
   background-position: left;
   transition: background-position 1s;
-  cursor: pointer;
   box-shadow: 2px 6px 8px 0 rgba(73, 34, 34, 0.35),
     2px 6px 12px 0 rgba(0, 0, 0, 0.4);
-  outline: none;
+
   &:hover,
   &:focus {
     background-position: right;
