@@ -1,7 +1,7 @@
 import React from 'react';
-import home from '../../images/home.jpg';
 import HomeLinks from './HomeLinks';
 import { useSpring, animated } from 'react-spring';
+import Background from './Background';
 
 export default props => {
   const { name, occupation, address, description } = props.main;
@@ -32,7 +32,7 @@ export default props => {
   return (
     <div className='page-home'>
       <div className='home-wrapper'>
-        <img className='splash-img' src={home} alt={description} />
+        <Background description={description} />
         <div className='hero-text-wrapper'>
           <div className='hero-text'>
             <animated.div style={fadeIn} className='animated-div'>
