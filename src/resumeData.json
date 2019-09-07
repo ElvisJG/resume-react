@@ -129,8 +129,7 @@
         "notable": [
           "Token Authentication with JSON Web Tokens",
           "Multi-Step Form",
-          "Registration",
-          "Login"
+          "Registration"
         ]
       }
     ]

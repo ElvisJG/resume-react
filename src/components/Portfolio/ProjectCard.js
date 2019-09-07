@@ -48,7 +48,10 @@ export default props => {
             >
               <Button>
                 Check out the
-                <DiGithubAlt size='2.5rem' />
+                <DiGithubAlt
+                  size='2.5rem'
+                  style={{ verticalAlign: 'text-bottom' }}
+                />
               </Button>
             </a>
           </div>

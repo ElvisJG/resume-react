@@ -1,14 +1,17 @@
 // Text Imports
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin:600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap");
 
 // Text Exports
 $roboto: 'Roboto Condensed',
 sans-serif;
-$cabin: Cabin', sans-serif';
+$cabin: 'Cabin',
+sans-serif;
 $pacifico: 'Pacifico',
+cursive;
+$marker: 'Permanent Marker',
 cursive;
 
 // Theme
@@ -46,6 +49,7 @@ $github: #24292e;
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: inherit;
     -webkit-appearance: none;
+    cursor: pointer;
 }
 
 // Debug

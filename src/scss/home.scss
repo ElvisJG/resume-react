@@ -34,25 +34,24 @@
 
     .animated-div {
       z-index: 1;
+      width: 100vw;
 
       &>h1 {
         font-family: $pacifico;
         font-size: 8rem;
-        @include db(red);
       }
 
       &>h2 {
         font-family: $pacifico;
         font-size: 9rem;
         padding: 3.5rem;
-        @include db(green);
       }
 
       &>h3 {
         margin-top: 1.5rem;
+        padding-bottom: 0.5rem;
         font-size: 3rem;
         font-family: $cabin;
-        @include db(yellow);
       }
     }
 
@@ -84,18 +83,142 @@
   }
 }
 
-@media only screen and (max-width: 1025px) {}
+@media screen and (max-height:320px) {
+  .home-wrapper {
+    .hero-text-wrapper {
+      .animated-div {
+        &>h3 {
+          display: none;
+        }
+      }
+    }
+  }
+}
 
-@media only screen and (max-width: 979px) {}
+/* The DREADED iPhone 5/SE */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  .home-wrapper {
+    .hero-text-wrapper {
+      .animated-div {
 
-@media only screen and (max-width: 768px) {}
+        &>h1 {
+          font-size: 4rem;
+        }
 
-@media only screen and (max-width: 480px) {}
+        &>h2 {
+          padding: 0.5rem 0 2.3rem;
+          font-size: 4.5rem;
+        }
 
-@media only screen and (max-width: 375px) {}
+        &>h3 {
+          margin: 0 1rem;
+          font-size: 2rem;
+        }
+      }
 
-@media only screen and (max-width: 360px) {}
+      .home-links {
+        margin: 0 auto;
 
-@media only screen and (max-height: 375px) {}
+        .home__links {
+          @include reset-btn;
+          margin: 0 1.5rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
 
-@media only screen and (max-height: 320px) {}
+/* Extra small devices (phones, up to 480px) */
+@media (min-width: 569px) and (max-width: 767px) {
+  .home-wrapper {
+    .hero-text-wrapper {
+      .animated-div {
+
+        &>h1 {
+          font-size: 4rem;
+        }
+
+        &>h2 {
+          padding: 0.5rem 0 2.3rem;
+          font-size: 4.5rem;
+        }
+
+        &>h3 {
+          margin: 0 1rem;
+          font-size: 2rem;
+        }
+      }
+
+      .home-links {
+        margin: 0 auto;
+
+        .home__links {
+          @include reset-btn;
+          margin: 0 1.5rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper {
+    .hero-text-wrapper {
+      .animated-div {
+
+        &>h1 {
+          font-size: 4.5rem;
+        }
+
+        &>h2 {
+          padding: 0.4rem 0 2.6rem;
+          font-size: 5.5rem;
+        }
+
+        &>h3 {
+          margin: 0 1rem;
+          font-size: 2.1rem;
+        }
+      }
+
+      .home-links {
+        margin: 0 auto;
+
+        .home__links {
+          margin: 0 1.5rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home-wrapper {
+    .hero-text-wrapper {
+      .animated-div {
+
+        &>h1 {
+          font-size: 6rem;
+        }
+
+        &>h2 {
+          font-size: 7rem;
+          padding: 0.5rem 0 3rem;
+        }
+
+        &>h3 {
+          margin: 0.5rem auto;
+          font-size: 2.6rem;
+        }
+      }
+    }
+  }
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {}

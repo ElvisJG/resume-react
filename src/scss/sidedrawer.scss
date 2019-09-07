@@ -37,7 +37,7 @@
 .drawer__links {
   color: white;
   margin: auto 2rem;
-  font-family: 'Cabin', sans-serif;
+  font-family: $cabin;
   font-size: 10rem;
   outline: none;
   background: none;
@@ -45,4 +45,13 @@
   text-decoration: none;
   text-shadow: 2px 2px 4px #09091a;
   z-index: 99;
+}
+
+.form-close {
+  font-size: 3rem;
+  color: #11c687;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
 }
