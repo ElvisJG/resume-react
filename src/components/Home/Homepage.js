@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import Background from './Background';
 
 export default props => {
-  const { name, occupation, address, description } = props.main;
+  const { name, occupation, address } = props.main;
   // Home Animations
   const fadeIn = useSpring({
     opacity: 1,
@@ -32,7 +32,7 @@ export default props => {
   return (
     <div className='page-home'>
       <div className='home-wrapper'>
-        <Background description={description} />
+        <Background />
         <div className='hero-text-wrapper'>
           <div className='hero-text'>
             <animated.div style={fadeIn} className='animated-div'>

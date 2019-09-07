@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MdClose } from 'react-icons/md';
 // ---------- Styles ---------- //
-import { Form, Label, ButtonAlt } from './index';
+import { ButtonAlt, ButtonClose } from './index';
 
 const encode = data => {
   return Object.keys(data)
@@ -31,49 +31,47 @@ export default class Contact extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <form className='cm-form' onSubmit={this.handleSubmit}>
         <MdClose className='form-close' onClick={this.props.hide} />
         <h1>Contact Me</h1>
         <div className='form-elements'>
-          <Label>
-            Your Name:{' '}
+          <label>
+            <div>Your Name: </div>
             <input
               type='text'
               name='name'
               value={name}
               onChange={this.handleChange}
             />
-          </Label>
-          <Label>
-            Your Email:{' '}
+          </label>
+          <label>
+            <div>Your Email: </div>
             <input
               type='email'
               name='email'
               value={email}
               onChange={this.handleChange}
             />
-          </Label>
-          <Label>
-            Message:{' '}
+          </label>
+          <label>
+            <div>Message: </div>
             <textarea
               name='message'
               value={message}
               rows='4'
               onChange={this.handleChange}
             />
-          </Label>
+          </label>
         </div>
         <div className='form-btns'>
           <p>
-            <ButtonAlt type='submit'>Send</ButtonAlt>
+            <ButtonAlt>Send</ButtonAlt>
           </p>
           <p>
-            <ButtonAlt className='close-btn' onClick={this.props.hide}>
-              Close
-            </ButtonAlt>
+            <ButtonClose onClick={this.props.hide}>Close</ButtonClose>
           </p>
         </div>
-      </Form>
+      </form>
     );
   }
 }

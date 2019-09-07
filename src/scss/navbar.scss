@@ -145,8 +145,6 @@
 
       .link__mirror {
         margin: 0 auto;
-
-        &>p {}
       }
     }
   }
@@ -156,17 +154,5 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav-wrapper {
     margin-top: 30px;
-
-    .link-effect {
-      .links {
-        .nav__btn {}
-
-        .nav__link {}
-      }
-
-      .link__mirror {
-        &>p {}
-      }
-    }
   }
 }
