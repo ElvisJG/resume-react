@@ -20,7 +20,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    min-width: 700px;
+    min-width: fit-content;
     height: 100vh;
     max-height: 980px;
     margin-right: 2rem;
@@ -62,27 +62,27 @@
           padding: 0.2rem 0.4rem 0.8rem 0;
         }
       }
-    }
 
-    .notable {
-      margin: 1rem 0;
+      .notable {
+        margin: 1rem 0;
 
-      &>h3 {
-        font-size: 2.25rem;
-        padding: 0.2rem;
-        text-align: center;
-        text-decoration: underline;
-      }
+        &>h3 {
+          font-size: 2.25rem;
+          padding: 0.2rem;
+          text-align: center;
+          text-decoration: underline;
+        }
 
-      &>ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        &>ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-        &>li {
-          width: 100%;
-          font-size: 1.7rem;
-          padding: 1rem 0;
+          &>li {
+            width: 100%;
+            font-size: 1.7rem;
+            padding: 1rem 0;
+          }
         }
       }
     }
@@ -94,16 +94,166 @@
 }
 
 /* Iphone 5/SE Landscape */
-@media screen and (max-height:320px) {}
+@media screen and (max-device-width : 1024px) and (orientation: landscape) {
+  .portfolio-card-wrapper {
+    margin-top: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
+
+    .profile-card {
+      height: 100%;
+
+      .portfolio-hero-img {
+        .portfolio-img {
+          height: 300px;
+          width: 300px;
+        }
+      }
+
+      .portfolio-hero-text {
+        .top-text {
+          &>h1 {
+            display: none;
+          }
+
+          &>h3 {
+            display: none;
+          }
+        }
+
+        .notable {
+          &>h3 {
+            display: none;
+          }
+
+          &>ul {
+            &>li {
+              display: none;
+            }
+          }
+        }
+
+        .button {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
 
 /* The DREADED iPhone 5/SE */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  .portfolio-card-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
 
-/* Extra small devices (phones, up to 480px) */
-@media (min-width: 569px) and (max-width: 767px) {}
+    .profile-card {
+      min-height: 100vh;
+      min-width: 100vw;
+      margin: 0 auto;
+
+      &:first-child {
+        margin-top: 70px;
+      }
+
+      .portfolio-hero-img {
+        padding: 1rem;
+
+        .portfolio-img {
+          height: 300px;
+          width: 300px;
+        }
+      }
+
+      .portfolio-hero-text {
+        font-size: 4rem;
+        color: white;
+        padding: 0;
+        min-width: 100vw;
+
+        .top-text {
+          &>h1 {
+            font-family: $cabin;
+          }
+
+          &>h3 {
+            font-size: 1.25rem;
+          }
+        }
+
+        .notable {
+          margin: 1rem 0;
+
+          &>h3 {
+            font-size: 2.25rem;
+            padding: 0;
+          }
+
+          &>ul {
+            &>li {
+              width: 100%;
+              font-size: 1.3rem;
+              padding: 0.5rem 0;
+            }
+          }
+        }
+      }
+
+      .button {
+        padding: 1rem;
+      }
+    }
+  }
+}
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio-card-wrapper {
+    .profile-card {
+      justify-content: flex-start;
+      align-items: center;
+
+      .portfolio-hero-text {
+        .notable {
+          &>ul {
+            &>li {
+              padding: 0.15rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 /* tablets/desktops and up ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-card-wrapper {
+    .profile-card {
+      max-height: 100vh;
+      min-width: 700px;
+    }
+  }
+}
+
+// Large Tablets (iPad Pro)
+@media (min-width: 1200px) and (max-width: 1366px) {
+  .portfolio-card-wrapper {
+    margin-top: 70px;
+
+    .profile-card {
+      .portfolio-hero-text {
+        .notable {
+          &>ul {
+            &>li {
+              padding: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
