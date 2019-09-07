@@ -93,8 +93,17 @@
   }
 }
 
-@media only screen and (max-width: 800px) {}
+/* Iphone 5/SE Landscape */
+@media screen and (max-height:320px) {}
 
-@media only screen and (max-width: 600px) {}
+/* The DREADED iPhone 5/SE */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {}
 
-@media only screen and (max-height: 500px) {}
+/* Extra small devices (phones, up to 480px) */
+@media (min-width: 569px) and (max-width: 767px) {}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {}

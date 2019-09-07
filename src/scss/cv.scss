@@ -162,7 +162,6 @@
 
     .exp-title {
       color: $main;
-
       margin-bottom: 0.5rem;
     }
 
@@ -242,10 +241,437 @@
 /*             Media Query               */
 /*---------------------------------------*/
 
-@media only screen and (width: 411px) {}
+/* The DREADED iPhone 5/SE */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  .cv-wrapper {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-@media only screen and (max-width: 500px) {}
+    .title-text {
+      &>h1 {
+        font-size: 2.5rem;
+      }
 
-@media only screen and (max-width: 1160px) {}
+      &>h2 {
+        font-size: 2rem;
+      }
+    }
 
-@media only screen and (max-height: 500px) {}
+    // Aside
+    .aside {
+      width: 100%;
+      margin: 0 auto;
+
+      .aside-section {
+        width: 90%;
+        text-align: center;
+        margin: 0.5rem auto;
+      }
+    }
+
+    .main-section {
+      width: 100%;
+
+      .interests-section {
+        margin: 1rem 0.5rem 1rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid $alt;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+      }
+
+      .experience-section {
+        margin: 0 0.5rem 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $alt;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+
+        .cv-experience {
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &>p {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+          }
+
+          p>em {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+          }
+
+          .duration {
+            margin-top: 1rem;
+            font-size: 2rem;
+            padding-bottom: 1.5rem;
+          }
+        }
+      }
+
+      .education-section {
+        margin: 1rem 0.5rem 0;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+
+        .cv-edu {
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid $opaque;
+          width: 95%;
+
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+
+          .cv-school {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem auto;
+
+            &>h4 {
+              margin: 0.5rem auto;
+            }
+
+            &>h5>em {
+              margin: 0.5rem auto;
+            }
+
+            .cap {
+              margin: 0.5rem auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media (min-width: 569px) and (max-width: 767px) {
+  .cv-wrapper {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .title-text {
+      &>h1 {
+        font-size: 3rem;
+      }
+
+      &>h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    // Aside
+    .aside {
+      width: 100%;
+      margin: 0 auto;
+
+      .aside-section {
+        width: 90%;
+        text-align: center;
+        margin: 0.5rem auto;
+
+        &>h2 {
+          font-size: 2.5rem;
+        }
+
+        &>p {
+          font-size: 2rem;
+        }
+
+        .spoken-notions {
+          &>p {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .main-section {
+      width: 100%;
+
+      .interests-section {
+        margin: 1rem 0.5rem 1rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid $alt;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+      }
+
+      .experience-section {
+        margin: 0 0.5rem 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $alt;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+
+        .cv-experience {
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &>p {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+          }
+
+          p>em {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+          }
+
+          .duration {
+            margin-top: 1rem;
+            font-size: 2rem;
+            padding-bottom: 1.5rem;
+          }
+        }
+      }
+
+      .education-section {
+        margin: 1rem 0.5rem 0;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+
+        .cv-edu {
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid $opaque;
+          width: 95%;
+
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+
+          .cv-school {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem auto;
+
+            &>h4 {
+              margin: 0.5rem auto;
+            }
+
+            &>h5>em {
+              margin: 0.5rem auto;
+            }
+
+            .cap {
+              margin: 0.5rem auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cv-wrapper {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .title-text {
+      &>h1 {
+        font-size: 3rem;
+      }
+
+      &>h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    // Aside
+    .aside {
+      width: 100%;
+      margin: 0 auto;
+
+      .aside-section {
+        width: 90%;
+        text-align: center;
+        margin: 0.5rem auto;
+      }
+    }
+
+    .main-section {
+      width: 100%;
+
+      .interests-section {
+        margin: 1rem 0.5rem 1rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid $alt;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+      }
+
+      .experience-section {
+        margin: 0 0.5rem 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $alt;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+
+        .cv-experience {
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &>p {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+          }
+
+          p>em {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+          }
+
+          .duration {
+            margin-top: 1rem;
+            font-size: 2rem;
+            padding-bottom: 1.5rem;
+          }
+        }
+      }
+
+      .education-section {
+        margin: 1rem 0.5rem 0;
+
+        &>h3 {
+          font-size: 4rem;
+          margin: 2rem auto;
+        }
+
+        .cv-edu {
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid $opaque;
+          width: 95%;
+
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+
+          .cv-school {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem auto;
+
+            &>h4 {
+              margin: 0.5rem auto;
+            }
+
+            &>h5>em {
+              margin: 0.5rem auto;
+            }
+
+            .cap {
+              margin: 0.5rem auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cv-wrapper {
+    .title-text {
+      &>h1 {
+        font-size: 4rem;
+      }
+
+      &>h2 {
+        font-size: 2.8rem;
+      }
+    }
+
+    // Aside
+    .aside {
+      .aside-section {
+        &>h2 {
+          font-size: 2rem;
+        }
+
+        .icons {
+          .linkedin {
+            width: 40px;
+            height: 40px;
+          }
+
+          .github {
+            width: 40px;
+            height: 40px;
+          }
+
+          &>button>:only-child {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        .spoken-notions {
+          &>p {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
