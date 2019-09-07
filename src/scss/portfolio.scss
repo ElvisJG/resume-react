@@ -93,15 +93,64 @@
   }
 }
 
-/* Iphone 5/SE Landscape */
+/* The DREADED iPhone 5/SE */
+@media screen and (device-width : 320px) {
+  .portfolio-card-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .profile-card {
+      .portfolio-hero-img {
+        .portfolio-img {
+          height: 250px;
+          width: 250px;
+        }
+      }
+
+      .portfolio-hero-text {
+        .top-text {
+          &>h1 {
+            display: none;
+          }
+
+          &>h3 {
+            display: none;
+          }
+        }
+
+        .notable {
+          &>h3 {
+            display: none;
+          }
+
+          &>ul {
+            &>li {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .button {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Landscape */
 @media screen and (max-device-width : 1024px) and (orientation: landscape) {
   .portfolio-card-wrapper {
     margin-top: 150px;
     overflow-x: hidden;
     overflow-y: scroll;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 
     .profile-card {
+      margin: 0 auto;
       height: 100%;
 
       .portfolio-hero-img {
@@ -142,29 +191,32 @@
   }
 }
 
-/* The DREADED iPhone 5/SE */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+/* Small Devices (phones 320px - 568px) */
+@media only screen and (min-device-width : 321px) and (max-device-width : 568px) {
   .portfolio-card-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    height: 100%;
 
     .profile-card {
-      min-height: 100vh;
-      min-width: 100vw;
+      min-height: 100%;
+      min-width: 100%;
       margin: 0 auto;
+      border-bottom: 2px solid $opaque-alt;
 
       &:first-child {
-        margin-top: 70px;
+        margin-top: 100px;
       }
 
       .portfolio-hero-img {
-        padding: 1rem;
+        padding: 0.5rem;
+        height: 330px;
 
         .portfolio-img {
-          height: 300px;
-          width: 300px;
+          height: 250px;
+          width: 250px;
         }
       }
 
@@ -172,31 +224,45 @@
         font-size: 4rem;
         color: white;
         padding: 0;
-        min-width: 100vw;
 
         .top-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          margin: 0 auto;
+
           &>h1 {
             font-family: $cabin;
           }
 
           &>h3 {
             font-size: 1.25rem;
+            margin: 0rem 0 1rem;
           }
         }
 
         .notable {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
           margin: 1rem 0;
 
           &>h3 {
             font-size: 2.25rem;
-            padding: 0;
+            padding: 0 0 2.5rem;
           }
 
           &>ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
             &>li {
-              width: 100%;
-              font-size: 1.3rem;
-              padding: 0.5rem 0;
+              font-size: 1.2rem;
+              padding: 0rem 0 1rem;
             }
           }
         }
@@ -212,9 +278,19 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   .portfolio-card-wrapper {
+    margin-top: 150px;
+
     .profile-card {
       justify-content: flex-start;
       align-items: center;
+
+      .portfolio-hero-img {
+
+        .portfolio-img {
+          height: 300px;
+          width: 300px;
+        }
+      }
 
       .portfolio-hero-text {
         .notable {
