@@ -80,6 +80,22 @@ export const ModalOverlay = styled.div`
   width: 100vw;
   z-index: 99;
   filter: blur(20px);
+
+  /* The DREADED iPhone 5/SE */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  }
+
+  /* Extra small devices (phones, up to 480px) */
+  @media (min-width: 569px) and (max-width: 767px) {
+  }
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991px) {
+  }
+
+  /* tablets/desktops and up ----------- */
+  @media (min-width: 992px) and (max-width: 1199px) {
+  }
 `;
 
 export const Form = styled.form`
@@ -97,6 +113,22 @@ export const Form = styled.form`
     color: white;
     font-size: 3rem;
     margin-bottom: 2rem;
+
+    /* The DREADED iPhone 5/SE */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    }
+
+    /* Extra small devices (phones, up to 480px) */
+    @media (min-width: 569px) and (max-width: 767px) {
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991px) {
+    }
+
+    /* tablets/desktops and up ----------- */
+    @media (min-width: 992px) and (max-width: 1199px) {
+    }
   }
 `;
 
@@ -113,5 +145,21 @@ export const Label = styled.label`
     line-height: 1.5rem;
     width: 300px;
     margin: 0.5rem;
+
+    /* The DREADED iPhone 5/SE */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    }
+
+    /* Extra small devices (phones, up to 480px) */
+    @media (min-width: 569px) and (max-width: 767px) {
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991px) {
+    }
+
+    /* tablets/desktops and up ----------- */
+    @media (min-width: 992px) and (max-width: 1199px) {
+    }
   }
 `;
