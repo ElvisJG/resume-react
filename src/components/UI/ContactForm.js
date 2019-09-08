@@ -64,12 +64,8 @@ export default class Contact extends Component {
           </label>
         </div>
         <div className='form-btns'>
-          <p>
-            <ButtonAlt>Send</ButtonAlt>
-          </p>
-          <p>
-            <ButtonClose onClick={this.props.hide}>Close</ButtonClose>
-          </p>
+          <ButtonAlt>Send</ButtonAlt>
+          <ButtonClose onClick={this.props.hide}>Close</ButtonClose>
         </div>
       </form>
     );
