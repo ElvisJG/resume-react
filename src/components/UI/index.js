@@ -82,9 +82,25 @@ export const ButtonAlt = styled.button`
     rgb(18, 243, 138) 100%
   );
   margin-top: 1rem;
-  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
     display: block;
     width: 250px;
+    line-height: 2rem;
+  }
+
+  @media (max-device-width: 1023px) and (orientation: landscape) {
+    display: block;
+    width: 200px;
+    margin: 0 2rem 0;
+    line-height: 2rem;
+  }
+
+  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+    display: block;
+    width: 350px;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    line-height: 2rem;
   }
 `;
 
@@ -127,10 +143,25 @@ export const ButtonClose = styled.button`
     rgb(18, 243, 138) 100%
   );
   display: none;
-  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
     display: block;
     margin-top: 2rem;
     width: 250px;
+    line-height: 2rem;
+  }
+
+  @media (max-device-width: 1023px) and (orientation: landscape) {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    line-height: 2rem;
+  }
+
+  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    line-height: 2rem;
   }
 `;
 
@@ -143,7 +174,7 @@ export const ModalOverlay = styled.div`
   filter: blur(20px);
 
   /* The DREADED iPhone 5/SE */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
     display: none;
   }
 `;
