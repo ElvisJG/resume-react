@@ -91,14 +91,14 @@ export const ButtonAlt = styled.button`
   @media (max-device-width: 1023px) and (orientation: landscape) {
     display: block;
     width: 200px;
-    margin: 0 2rem 0;
+    margin: 0 auto;
     line-height: 2rem;
   }
 
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1035px) and (orientation: landscape) {
     display: block;
     width: 350px;
-    margin-right: 5rem;
+    margin: 0 auto;
     margin-top: 2rem;
     line-height: 2rem;
   }
@@ -106,7 +106,7 @@ export const ButtonAlt = styled.button`
 
 export const ButtonClose = styled.button`
   border: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 100%;
   font: inherit;
@@ -157,7 +157,7 @@ export const ButtonClose = styled.button`
     line-height: 2rem;
   }
 
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1035px) and (orientation: landscape) {
     display: block;
     width: 350px;
     margin: 0 auto;

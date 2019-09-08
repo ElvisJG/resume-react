@@ -11,6 +11,9 @@
     border-radius: 12px;
     box-shadow: -20px 15px 10px rgba(13, 156, 106, 0.25);
     z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .form-close {
         font-size: 3rem;
@@ -50,6 +53,10 @@
                 margin: 0.5rem;
             }
         }
+    }
+
+    .form-btns {
+        width: 100%;
     }
 }
 
@@ -110,7 +117,7 @@
 }
 
 /* Tablet Landscapes */
-@media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1035px) and (orientation: landscape) {
     .cm-form {
         min-height: 100vh;
         min-width: 100vw;
