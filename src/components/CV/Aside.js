@@ -16,7 +16,7 @@ export default props => {
   return (
     <div className='aside'>
       <div className='aside-section'>
-        <h2>About</h2>
+        <h2>Location</h2>
         <p>{city}</p>
         <p>{state}</p>
       </div>

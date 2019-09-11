@@ -61,7 +61,7 @@
     }
 
     &>p {
-      color: $alt;
+      color: $dark;
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
@@ -98,7 +98,7 @@
   .spoken-notions {
 
     &>p {
-      color: $alt;
+      color: $dark;
       font-size: 1.5rem;
       line-height: 1.6rem;
       padding-bottom: 0.5rem;
@@ -124,10 +124,12 @@
   }
 
   p>em {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
+    margin-right: 0.25rem;
     color: $main;
     vertical-align: bottom;
+    text-decoration: underline;
   }
 }
 

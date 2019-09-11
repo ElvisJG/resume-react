@@ -1,17 +1,15 @@
 import React from 'react';
 
 export default props => {
-  const { bio, prointerests } = props.main;
+  const { bio, skills } = props.main;
   return (
     <div className='interests-section'>
       <h3>
-        <em>Int</em>erests
+        <em>About</em> Me
       </h3>
+      <p>{bio}</p>
       <p>
-        <em>About Me</em> {bio}
-      </p>
-      <p>
-        <em>Professional Interests</em> {prointerests}
+        <em>Skills:</em> {skills}
       </p>
     </div>
   );
