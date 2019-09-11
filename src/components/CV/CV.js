@@ -6,11 +6,13 @@ import Aside from './Aside';
 import Int from './Interests';
 import Exp from './Experience';
 import Edu from './Education';
+import Plating from '../UI/Plating';
 
 export default props => {
   return (
     <div className='page-CV'>
       <Nav />
+      <Plating />
       <div className='cv-wrapper'>
         <Title main={props.main} />
         <Aside main={props.main} resume={props.resume} />
