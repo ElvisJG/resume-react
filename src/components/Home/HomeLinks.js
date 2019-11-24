@@ -8,22 +8,22 @@ export default function HomeLinks() {
   const { isShowing, toggle } = useModal();
   const dropOne = useSpring({
     opacity: 1,
-    transform: "translateY(0,0px,0)",
-    from: { opacity: 0, transform: "translateY(0,-100px,0)" },
+    transform: "translateY(0px)",
+    from: { opacity: 0, transform: "translateY(-100px)" },
     delay: "4000"
   });
   const dropTwo = useSpring({
     opacity: 1,
     tension: 180,
     friction: 12,
-    transform: "translateY(0,0px,0)",
-    from: { opacity: 0, transform: "translateY(0,-100px,0)" },
+    transform: "translateY(0px)",
+    from: { opacity: 0, transform: "translateY(-100px)" },
     delay: "4500"
   });
   const dropThree = useSpring({
     opacity: 1,
-    transform: "translateY(0,0px,0)",
-    from: { opacity: 0, transform: "translateY(0,-100px,0)" },
+    transform: "translateY(0px)",
+    from: { opacity: 0, transform: "translateY(-100px)" },
     delay: "5000"
   });
   return (
